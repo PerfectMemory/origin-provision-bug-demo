@@ -1,0 +1,13 @@
+{
+  "name": "openshift3-master",
+  "description": "Openshift3 Master Role",
+  "json_class": "Chef::Role",
+  "default_attributes": {},
+  "override_attributes": {},
+  "chef_type": "role",
+  "run_list": [
+    "role[openshift3-base]",
+    "recipe[cookbook-openshift3::master]",
+    "recipe[cookbook-openshift3::node]"
+  ]
+}

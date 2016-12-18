@@ -1,0 +1,13 @@
+DEPENDENCIES
+  cookbook-openshift3 (~> 1.10.21)
+
+GRAPH
+  compat_resource (12.16.2)
+  cookbook-openshift3 (1.10.21)
+    iptables (>= 1.0.0)
+    selinux_policy (>= 0.0.0)
+  iptables (3.0.1)
+    compat_resource (>= 12.14.3)
+  selinux_policy (1.1.1)
+    yum (~> 4.0)
+  yum (4.1.0)

@@ -1,0 +1,2321 @@
+Bringing machine 'master' up with 'virtualbox' provider...
+    master: The Berkshelf shelf is at "/home/julien/.berkshelf/vagrant-berkshelf/shelves/berkshelf20161218-22874-734gwo-master"
+==> master: Sharing cookbooks with VM
+==> master: Importing base box 'opscode_centos-7.2_chef-provisionerless'...
+[KProgress: 20%[KProgress: 50%[KProgress: 70%[KProgress: 90%[K==> master: Matching MAC address for NAT networking...
+==> master: Setting the name of the VM: origin-platform2_master_1482085917854_97370
+==> master: Updating Vagrant's Berkshelf...
+==> master: Resolving cookbook dependencies...
+==> master: Using yum (4.1.0)
+==> master: Using cookbook-openshift3 (1.10.21)
+==> master: Using iptables (3.0.1)
+==> master: Using selinux_policy (1.1.1)
+==> master: Using compat_resource (12.16.2)
+==> master: Vendoring compat_resource (12.16.2) to /home/julien/.berkshelf/vagrant-berkshelf/shelves/berkshelf20161218-22874-734gwo-master/compat_resource
+==> master: Vendoring cookbook-openshift3 (1.10.21) to /home/julien/.berkshelf/vagrant-berkshelf/shelves/berkshelf20161218-22874-734gwo-master/cookbook-openshift3
+==> master: Vendoring iptables (3.0.1) to /home/julien/.berkshelf/vagrant-berkshelf/shelves/berkshelf20161218-22874-734gwo-master/iptables
+==> master: Vendoring selinux_policy (1.1.1) to /home/julien/.berkshelf/vagrant-berkshelf/shelves/berkshelf20161218-22874-734gwo-master/selinux_policy
+==> master: Vendoring yum (4.1.0) to /home/julien/.berkshelf/vagrant-berkshelf/shelves/berkshelf20161218-22874-734gwo-master/yum
+==> master: Using hostname "master" as node name for Chef...
+==> master: Clearing any previously set network interfaces...
+==> master: Preparing network interfaces based on configuration...
+    master: Adapter 1: nat
+    master: Adapter 2: hostonly
+==> master: Forwarding ports...
+    master: 22 (guest) => 2222 (host) (adapter 1)
+==> master: Running 'pre-boot' VM customizations...
+==> master: Booting VM...
+==> master: Waiting for machine to boot. This may take a few minutes...
+    master: SSH address: 127.0.0.1:2222
+    master: SSH username: vagrant
+    master: SSH auth method: private key
+    master: Warning: Remote connection disconnect. Retrying...
+    master: Warning: Remote connection disconnect. Retrying...
+    master: Warning: Remote connection disconnect. Retrying...
+    master: 
+    master: Vagrant insecure key detected. Vagrant will automatically replace
+    master: this with a newly generated keypair for better security.
+    master: 
+    master: Inserting generated public key within guest...
+    master: Removing insecure key from the guest if it's present...
+    master: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> master: Machine booted and ready!
+==> master: Checking for guest additions in VM...
+    master: The guest additions on this VM do not match the installed version of
+    master: VirtualBox! In most cases this is fine, but in rare cases it can
+    master: prevent things such as shared folders from working properly. If you see
+    master: shared folder errors, please make sure the guest additions within the
+    master: virtual machine match the version of VirtualBox you have installed on
+    master: your host and reload your VM.
+    master: 
+    master: Guest Additions Version: 5.0.16
+    master: VirtualBox Version: 5.1
+==> master: Setting hostname...
+==> master: Configuring and enabling network interfaces...
+==> master: Configuring proxy for Chef provisioners...
+==> master: Configuring proxy environment variables...
+==> master: Configuring proxy for Yum...
+==> master: Mounting shared folders...
+    master: /vagrant => /home/julien/RubymineProjects/origin-platform2
+    master: /tmp/vagrant-cache => /home/julien/.vagrant.d/cache/opscode_centos-7.2_chef-provisionerless
+    master: /tmp/vagrant-chef/8cd05d4b4314e20e490f4f8c91f12417/roles => /home/julien/RubymineProjects/origin-platform2/roles
+    master: /tmp/vagrant-chef/e72fc46ff69afec9fb29d0df78ac2b80/nodes => /home/julien/RubymineProjects/origin-platform2/nodes
+    master: /tmp/vagrant-chef/e7b7c75d97260b601edab0ebeae1feae/cookbooks => /home/julien/.berkshelf/vagrant-berkshelf/shelves/berkshelf20161218-22874-734gwo-master
+    master: /tmp/vagrant-chef/9be0d0483bcd06662217c04dbbb69d0a/cookbooks => /home/julien/RubymineProjects/origin-platform2/cookbooks
+    master: /tmp/vagrant-chef/08ff5804f1dc293df543a05f3a70f56a/environments => /home/julien/RubymineProjects/origin-platform2/environments
+==> master: Configuring cache buckets...
+==> master: Installing Chef 12.17.44 Omnibus package...
+==> master: 
+==> master: el 7 x86_64
+==> master: Getting information for chef stable 12.17.44 for el...
+==> master: downloading https://omnitruck-direct.chef.io/stable/chef/metadata?v=12.17.44&p=el&pv=7&m=x86_64
+==> master:   to file /tmp/install.sh.17251/metadata.txt
+==> master: trying wget...
+==> master: sha1	ffa2c60116d57c8b987ee2e906bff9106c98daf5
+==> master: sha256	beccc11f5861bde369f62ca3fd7361b536786e91d73f538857e625a622f8caef
+==> master: url	https://packages.chef.io/files/stable/chef/12.17.44/el/7/chef-12.17.44-1.el7.x86_64.rpm
+==> master: version	12.17.44
+
+==> master: downloaded metadata file looks valid...
+==> master: /tmp/vagrant-cache/vagrant_omnibus/chef-12.17.44-1.el7.x86_64.rpm already exists, verifiying checksum...
+==> master: Comparing checksum with sha256sum...
+==> master: checksum compare succeeded, using existing file!
+==> master: Installing chef 12.17.44
+==> master: installing with rpm...
+==> master: warning: /tmp/vagrant-cache/vagrant_omnibus/chef-12.17.44-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+==> master: Preparing...                          
+==> master: ########################################
+==> master: Updating / installing...
+==> master: chef-12.17.44-1.el7                   
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: #
+==> master: Thank you for installing Chef!
+==> master: Running provisioner: shell...
+    master: Running: inline script
+==> master: Configuring cache buckets...
+==> master: Running provisioner: chef_solo...
+==> master: Detected Chef (latest) is already installed
+==> master: Generating chef JSON and uploading...
+==> master: Running chef-solo...
+==> master: [2016-12-18T18:33:36+00:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /tmp/vagrant-chef/e7b7c75d97260b601edab0ebeae1feae, /tmp/vagrant-chef/9be0d0483bcd06662217c04dbbb69d0a, /tmp/vagrant-chef
+==> master:   One version per cookbook
+==> master:   environments at /tmp/vagrant-chef/08ff5804f1dc293df543a05f3a70f56a/environments
+==> master:   roles at /tmp/vagrant-chef/8cd05d4b4314e20e490f4f8c91f12417/roles
+==> master:   nodes at /tmp/vagrant-chef/e72fc46ff69afec9fb29d0df78ac2b80/nodes
+==> master: 
+==> master: [2016-12-18T18:33:36+00:00] INFO: Forking chef instance to converge...
+==> master: Starting Chef Client, version 12.17.44
+==> master: [2016-12-18T18:33:36+00:00] INFO: *** Chef 12.17.44 ***
+==> master: [2016-12-18T18:33:36+00:00] INFO: Platform: x86_64-linux
+==> master: [2016-12-18T18:33:36+00:00] INFO: Chef-client pid: 20638
+==> master: [2016-12-18T18:33:37+00:00] INFO: Setting the run_list to ["role[openshift3-master]"] from CLI options
+==> master: [2016-12-18T18:33:37+00:00] INFO: Run List is [role[openshift3-master]]
+==> master: [2016-12-18T18:33:37+00:00] INFO: Run List expands to [cookbook-openshift3, cookbook-openshift3::common, cookbook-openshift3::master, cookbook-openshift3::node]
+==> master: [2016-12-18T18:33:37+00:00] INFO: Starting Chef Run for master
+==> master: [2016-12-18T18:33:37+00:00] INFO: Running start handlers
+==> master: [2016-12-18T18:33:37+00:00] INFO: Start handlers complete.
+==> master: [2016-12-18T18:33:37+00:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+==> master: resolving cookbooks for run list: ["cookbook-openshift3", "cookbook-openshift3::common", "cookbook-openshift3::master", "cookbook-openshift3::node"]
+==> master: [2016-12-18T18:33:39+00:00] INFO: Loading cookbooks [cookbook-openshift3@1.10.21, iptables@3.0.1, selinux_policy@1.1.1, compat_resource@12.16.2, yum@4.1.0]
+==> master: Synchronizing Cookbooks:
+==> master: [2016-12-18T18:33:40+00:00] INFO: Storing updated cookbooks/cookbook-openshift3/recipes/master_config_post.rb in the cache.
+==> master: [2016-12-18T18:33:40+00:00] INFO: Storing updated cookbooks/cookbook-openshift3/metadata.json in the cache.
+==> master:   - iptables (3.0.1)
+==> master:   - cookbook-openshift3 (1.10.21)
+==> master:   - selinux_policy (1.1.1)
+==> master:   - compat_resource (12.16.2)
+==> master:   - yum (4.1.0)
+==> master: Installing Cookbook Gems:
+==> master: Compiling Cookbooks...
+==> master: [2016-12-18T18:33:40+00:00] WARN: Chef::Provider::YumRepository already exists!  Cannot create deprecation class for LWRP provider yum_repository from cookbook yum
+==> master: [2016-12-18T18:33:40+00:00] WARN: YumRepository already exists!  Deprecation class overwrites Custom resource yum_repository from cookbook yum
+==> master: Converging 95 resources
+==> master: Recipe: cookbook-openshift3::default
+==> master:   * service[origin-master] action nothing (skipped due to action :nothing)
+==> master:   * service[origin-master-api] action nothing (skipped due to action :nothing)
+==> master:   * service[origin-master-controllers] action nothing (skipped due to action :nothing)
+==> master:   * service[daemon-reload] action nothing (skipped due to action :nothing)
+==> master:   * service[httpd] action nothing (skipped due to action :nothing)
+==> master:   * service[etcd] action nothing
+==> master:  (skipped due to action :nothing)
+==> master:   * service[docker] action nothing
+==> master:  (skipped due to action :nothing)
+==> master:   * service[NetworkManager] action nothing (skipped due to action :nothing)
+==> master:   * service[openvswitch] action nothing (skipped due to action :nothing)
+==> master: Recipe: iptables::_package
+==> master:   * yum_package[iptables-services] action install
+==> master: [2016-12-18T18:33:44+00:00] INFO: yum_package[iptables-services] installing iptables-services-1.4.21-17.el7 from base repository
+==> master: [2016-12-18T18:33:47+00:00] INFO: yum_package[iptables-services] installed iptables-services at 1.4.21-17.el7
+==> master: 
+==> master:     - install version 1.4.21-17.el7 of package iptables-services
+==> master: Recipe: iptables::default
+==> master:   * execute[rebuild-iptables] action nothing (skipped due to action :nothing)
+==> master:   * directory[/etc/iptables.d] action create
+==> master: [2016-12-18T18:33:47+00:00] INFO: directory[/etc/iptables.d] created directory /etc/iptables.d
+==> master: 
+==> master:     - create new directory /etc/iptables.d
+==> master: 
+==> master:     - restore selinux security context
+==> master:   * template[/usr/sbin/rebuild-iptables] action create
+==> master: [2016-12-18T18:33:47+00:00] INFO: template[/usr/sbin/rebuild-iptables] created file /usr/sbin/rebuild-iptables
+==> master: 
+==> master:     - create new file /usr/sbin/rebuild-iptables
+==> master: [2016-12-18T18:33:47+00:00] INFO: template[/usr/sbin/rebuild-iptables] updated file contents /usr/sbin/rebuild-iptables
+==> master: 
+==> master:     - update content in file /usr/sbin/rebuild-iptables from none to dffada
+==> master:     
+==> master: --- /usr/sbin/rebuild-iptables	2016-12-18 18:33:47.571200499 +0000
+==> master: 
+==> master:     +++ /usr/sbin/.chef-rebuild-iptables20161218-20638-13kl0c1	2016-12-18 18:33:47.571200499 +0000
+==> master:     @@ -1 +1,139 @@
+==> master:     +#!/opt/chef/embedded/bin/ruby -w
+==> master:     +
+==> master:     +#
+==> master: 
+==> master:     +# rebuild-iptables.rb -- Construct an iptables rules file from fragments.
+==> master:     +#
+==> master:     +# Written by Phil Cohen <github@phlippers.net>
+==> master:     +# Copyright 2011, Phil Cohen
+==> master:     +#
+==> master: 
+==> master:     +# Constructs an iptables rules file from the prefix, standard, and suffix
+==> master:     +# files in the iptables configuration area, adding any additional modules
+==> master:     +# specified in the command line, and prints the resulting iptables rules to
+==> master:     +# standard output (suitable for saving into /var/lib/iptables or some other
+==> master:     +# appropriate location on the system).
+==> master:     
+==> master: +
+==> master:     +##############################################################################
+==> master:     
+==> master: +# Modules and declarations
+==> master:     +##############################################################################
+==> master: 
+==> master:     +
+==> master:     +# Path to the iptables template area.
+==> master:     +TEMPLATE_PATH = "/etc/iptables.d"
+==> master:     +
+==> master:     
+==> master: +##############################################################################
+==> master: 
+==> master:     +# Installation
+==> master: 
+==> master:     
+==> master: +##############################################################################
+==> master: 
+==> master:     +
+==> master:     +# Read in a file, processing includes as required.
+==> master:     +def read_iptables(file, table = :filter)
+==> master:     +  file = File.join(TEMPLATE_PATH, file) unless File.dirname(file) =~ /iptables\.d/
+==> master: 
+==> master:     +  rule = File.readlines(file).map{ |line| line.chomp }
+==> master: 
+==> master:     +  rule.each do |line|
+==> master: 
+==> master:     +    if line =~ /^\s*include\s+(\S+)$/
+==> master:     +      read_iptables($1, table)
+==> master:     +    elsif line =~ /^\s*\*([a-z]+)\s*$/
+==> master:     +      table = $1.to_sym
+==> master:     +    elsif line =~ /^\s*:([-a-zA-Z0-9_]+)(?:\s+([A-Z]+(?:\s*\[.*?\])))?$/
+==> master: 
+==> master:     +      @data[table][:chains][$1] = $2 || '-'
+==> master:     +    elsif line !~ /^\s*COMMIT\s*$/
+==> master:     +      #detect new chains
+==> master:     +      if chain = line.match(/\-[ADRILFZN]\s+([-a-zA-Z0-9_]+)\s/)
+==> master:     +        @data[table][:chains][chain[1]] ||= '-'
+==> master:     +      end
+==> master:     +      @data[table][:rules].push line
+==> master:     
+==> master: +    end
+==> master:     +  end
+==> master: 
+==> master:     +end
+==> master: 
+==> master:     +
+==> master:     +# Write a file carefully.
+==> master:     +def write_iptables(file, data)
+==> master:     +  File.open("#{file}.new", "w") { |f| f.write(data) }
+==> master:     +  File.rename("#{file}.new", file)
+==> master:     +end
+==> master:     +
+==> master:     +# Install iptables on a Red Hat or Debian system. Takes the new iptables data.
+==> master:     
+==> master: +def install_rules(data)
+==> master:     
+==> master: +  Dir.mkdir("/etc/iptables") unless File.directory?("/etc/iptables")
+==> master: 
+==> master:     +  write_iptables("/etc/iptables/general", data)
+==> master:     +  system("/sbin/iptables-restore < /etc/iptables/general")
+==> master:     +  system("cp /etc/iptables/general /etc/sysconfig/iptables")
+==> master:     +end
+==> master:     +
+==> master:     +##############################################################################
+==> master:     +# Main routine
+==> master:     
+==> master: +##############################################################################
+==> master:     
+==> master: +
+==> master: 
+==> master:     
+==> master: +@data = {
+==> master: 
+==> master:     +    :filter => {
+==> master:     +        :chains => {
+==> master:     +            'INPUT'   => 'ACCEPT [0,0]',
+==> master:     +            'FORWARD' => 'ACCEPT [0,0]',
+==> master:     +            'OUTPUT'  => 'ACCEPT [0,0]'
+==> master:     +        },
+==> master: 
+==> master:     +        :rules => []
+==> master: 
+==> master:     +    },
+==> master: 
+==> master:     
+==> master: +    :mangle => {
+==> master:     
+==> master: +        :chains => {
+==> master:     +            'PREROUTING'  => 'ACCEPT [0,0]',
+==> master:     +            'INPUT'       => 'ACCEPT [0,0]',
+==> master:     +            'FORWARD'     => 'ACCEPT [0,0]',
+==> master:     +            'OUTPUT'      => 'ACCEPT [0,0]',
+==> master:     +            'POSTROUTING' => 'ACCEPT [0,0]'
+==> master:     +        },
+==> master:     
+==> master: +        :rules => []
+==> master:     +    },
+==> master: 
+==> master:     
+==> master: +    :nat => {
+==> master: 
+==> master:     
+==> master: +        :chains => {
+==> master: 
+==> master:     +            'PREROUTING'  => 'ACCEPT [0,0]',
+==> master:     +            'POSTROUTING' => 'ACCEPT [0,0]',
+==> master:     +            'OUTPUT'      => 'ACCEPT [0,0]'
+==> master:     
+==> master: +        },
+==> master:     +        :rules => [],
+==> master:     +    },
+==> master: 
+==> master:     +    :raw => {
+==> master: 
+==> master:     
+==> master: +        :chains => {
+==> master:     +            'PREROUTING'  => 'ACCEPT [0,0]',
+==> master: 
+==> master:     +            'OUTPUT'      => 'ACCEPT [0,0]'
+==> master:     +        },
+==> master: 
+==> master:     +        :rules => [],
+==> master:     
+==> master: +    },
+==> master:     +    :security => {
+==> master:     +        :chains => {
+==> master: 
+==> master:     +            'INPUT'   => 'ACCEPT [0,0]',
+==> master:     +            'FORWARD' => 'ACCEPT [0,0]',
+==> master: 
+==> master:     +            'OUTPUT'  => 'ACCEPT [0,0]'
+==> master:     +        },
+==> master: 
+==> master:     
+==> master: +        :rules => []
+==> master: 
+==> master:     
+==> master: +    }
+==> master:     +}
+==> master:     +
+==> master: 
+==> master:     +templates = Dir["#{TEMPLATE_PATH}/*"].sort.delete_if do |template|
+==> master:     +  %w[prefix suffix postfix].include?(File.basename(template))
+==> master:     +end
+==> master:     
+==> master: +
+==> master:     +templates.unshift 'prefix' if File.exist? "#{TEMPLATE_PATH}/prefix"
+==> master: 
+==> master:     +templates.push 'suffix' if File.exist? "#{TEMPLATE_PATH}/suffix"
+==> master:     +templates.push 'postfix' if File.exist? "#{TEMPLATE_PATH}/postfix"
+==> master: 
+==> master:     +
+==> master:     +templates.each { |template| read_iptables(template) }
+==> master:     
+==> master: +
+==> master:     +iptables_rules = ""
+==> master: 
+==> master:     +@data.each do |table, table_data|
+==> master:     +  if table_data[:rules].any?
+==> master: 
+==> master:     
+==> master: +    iptables_rules << "*#{table.to_s}\n"
+==> master: 
+==> master:     +    table_data[:chains].each do |chain, rule|
+==> master:     +      iptables_rules << ":#{chain} #{rule}\n"
+==> master:     +    end
+==> master:     +    iptables_rules << table_data[:rules].join("\n")
+==> master: 
+==> master:     +    iptables_rules << "\nCOMMIT\n"
+==> master:     +  end
+==> master: 
+==> master:     +end
+==> master:     +
+==> master:     +system_files = %w(/etc/debian_version /etc/redhat-release /etc/system-release)
+==> master: 
+==> master:     
+==> master: +if system_files.any? { |file| File.exist?(file) }
+==> master:     +  install_rules(iptables_rules)
+==> master: 
+==> master:     
+==> master: +else
+==> master:     +  raise "#{$0}: cannot figure out whether this is Red Hat or Debian\n";
+==> master:     +end
+==> master:     +
+==> master:     
+==> master: +exit 0
+==> master: [2016-12-18T18:33:47+00:00] INFO: template[/usr/sbin/rebuild-iptables] mode changed to 755
+==> master: 
+==> master:     - change mode from '' to '0755'
+==> master: 
+==> master:     - restore selinux security context
+==> master:   * template[/etc/network/if-pre-up.d/iptables_load] action create (skipped due to only_if)
+==> master:   * file[/etc/sysconfig/iptables] action create_if_missing
+==> master:  (up to date)
+==> master:   * template[/etc/sysconfig/iptables-config] action create
+==> master: [2016-12-18T18:33:47+00:00] INFO: template[/etc/sysconfig/iptables-config] backed up to /var/chef/backup/etc/sysconfig/iptables-config.chef-20161218183347.637752
+==> master: [2016-12-18T18:33:47+00:00] INFO: template[/etc/sysconfig/iptables-config] updated file contents /etc/sysconfig/iptables-config
+==> master: 
+==> master:     
+==> master: - update content in file /etc/sysconfig/iptables-config from 97d756 to 1621ec
+==> master: 
+==> master:     --- /etc/sysconfig/iptables-config	2016-11-05 21:14:46.000000000 +0000
+==> master:     +++ /etc/sysconfig/.chef-iptables-config20161218-20638-1mnnw00	2016-12-18 18:33:47.635232500 +0000
+==> master:     
+==> master: @@ -1,55 +1,10 @@
+==> master: 
+==> master:     -# Load additional iptables modules (nat helpers)
+==> master:     -#   Default: -none-
+==> master: 
+==> master:     
+==> master: -# Space separated list of nat helpers (e.g. 'ip_nat_ftp ip_nat_irc'), which
+==> master: 
+==> master:     -# are loaded after the firewall rules are applied. Options for the helpers are
+==> master:     
+==> master: -# stored in /etc/modprobe.conf.
+==> master:     +# This file managed by Chef. Do not hand edit
+==> master:      IPTABLES_MODULES=""
+==> master: 
+==> master:     -
+==> master:     -# Unload modules on restart and stop
+==> master:     -#   Value: yes|no,  default: yes
+==> master:     -# This option has to be 'yes' to get to a sane state for a firewall
+==> master:     -# restart or stop. Only set to 'no' if there are problems unloading netfilter
+==> master:     -# modules.
+==> master:      IPTABLES_MODULES_UNLOAD="yes"
+==> master:     -
+==> master:     -# Save current firewall rules on stop.
+==> master:     -#   Value: yes|no,  default: no
+==> master: 
+==> master:     
+==> master: -# Saves all firewall rules to /etc/sysconfig/iptables if firewall gets stopped
+==> master:     -# (e.g. on system shutdown).
+==> master:     
+==> master:  IPTABLES_SAVE_ON_STOP="no"
+==> master:     
+==> master: -
+==> master: 
+==> master:     -# Save current firewall rules on restart.
+==> master: 
+==> master:     -#   Value: yes|no,  default: no
+==> master:     
+==> master: -# Saves all firewall rules to /etc/sysconfig/iptables if firewall gets
+==> master: 
+==> master:     -# restarted.
+==> master:     
+==> master:  IPTABLES_SAVE_ON_RESTART="no"
+==> master: 
+==> master:     -
+==> master:     -# Save (and restore) rule and chain counter.
+==> master:     
+==> master: -#   Value: yes|no,  default: no
+==> master: 
+==> master:     -# Save counters for rules and chains to /etc/sysconfig/iptables if
+==> master:     -# 'service iptables save' is called or on stop or restart if SAVE_ON_STOP or
+==> master: 
+==> master:     -# SAVE_ON_RESTART is enabled.
+==> master: 
+==> master:      IPTABLES_SAVE_COUNTER="no"
+==> master: 
+==> master:     -
+==> master: 
+==> master:     
+==> master: -# Numeric status output
+==> master: 
+==> master:     -#   Value: yes|no,  default: yes
+==> master: 
+==> master:     
+==> master: -# Print IP addresses and port numbers in numeric format in the status output.
+==> master: 
+==> master:      IPTABLES_STATUS_NUMERIC="yes"
+==> master: 
+==> master:     
+==> master: -
+==> master: 
+==> master:     
+==> master: -# Verbose status output
+==> master: 
+==> master:     
+==> master: -#   Value: yes|no,  default: yes
+==> master: 
+==> master:     -# Print info about the number of packets and bytes plus the "input-" and
+==> master:     
+==> master: -# "outputdevice" in the status output.
+==> master: 
+==> master:     
+==> master:  IPTABLES_STATUS_VERBOSE="no"
+==> master: 
+==> master:     
+==> master: -
+==> master: 
+==> master:     
+==> master: -# Status output with numbered lines
+==> master: 
+==> master:     -#   Value: yes|no,  default: yes
+==> master: 
+==> master:     -# Print a counter/number for every rule in the status output.
+==> master:      IPTABLES_STATUS_LINENUMBERS="yes"
+==> master:     -
+==> master:     -# Reload sysctl settings on start and restart
+==> master: 
+==> master:     -#   Default: -none-
+==> master:     
+==> master: -# Space separated list of sysctl items which are to be reloaded on start.
+==> master: 
+==> master:     -# List items will be matched by fgrep.
+==> master: 
+==> master:     -#IPTABLES_SYSCTL_LOAD_LIST=".nf_conntrack .bridge-nf"
+==> master: 
+==> master:     - restore selinux security context
+==> master:   * template[/etc/sysconfig/ip6tables-config] action create
+==> master: [2016-12-18T18:33:47+00:00] INFO: template[/etc/sysconfig/ip6tables-config] backed up to /var/chef/backup/etc/sysconfig/ip6tables-config.chef-20161218183347.678310
+==> master: [2016-12-18T18:33:47+00:00] INFO: template[/etc/sysconfig/ip6tables-config] updated file contents /etc/sysconfig/ip6tables-config
+==> master: 
+==> master:     - update content in file /etc/sysconfig/ip6tables-config from 4f76ef to 028594
+==> master: 
+==> master:     --- /etc/sysconfig/ip6tables-config	2016-11-05 21:14:46.000000000 +0000
+==> master:     +++ /etc/sysconfig/.chef-ip6tables-config20161218-20638-1y443sb	2016-12-18 18:33:47.676252999 +0000
+==> master:     @@ -1,55 +1,10 @@
+==> master: 
+==> master:     -# Load additional ip6tables modules (nat helpers)
+==> master:     -#   Default: -none-
+==> master:     -# Space separated list of nat helpers (e.g. 'ip_nat_ftp ip_nat_irc'), which
+==> master: 
+==> master:     -# are loaded after the firewall rules are applied. Options for the helpers are
+==> master: 
+==> master:     -# stored in /etc/modprobe.conf.
+==> master:     +# This file managed by Chef. Do not hand edit
+==> master:      IP6TABLES_MODULES=""
+==> master: 
+==> master:     
+==> master: -
+==> master: 
+==> master:     -# Unload modules on restart and stop
+==> master:     -#   Value: yes|no,  default: yes
+==> master: 
+==> master:     -# This option has to be 'yes' to get to a sane state for a firewall
+==> master: 
+==> master:     -# restart or stop. Only set to 'no' if there are problems unloading netfilter
+==> master: 
+==> master:     
+==> master: -# modules.
+==> master: 
+==> master:     
+==> master:  IP6TABLES_MODULES_UNLOAD="yes"
+==> master: 
+==> master:     
+==> master: -
+==> master: 
+==> master:     -# Save current firewall rules on stop.
+==> master: 
+==> master:     
+==> master: -#   Value: yes|no,  default: no
+==> master: 
+==> master:     -# Saves all firewall rules to /etc/sysconfig/ip6tables if firewall gets stopped
+==> master:     
+==> master: -# (e.g. on system shutdown).
+==> master:      IP6TABLES_SAVE_ON_STOP="no"
+==> master:     -
+==> master: 
+==> master:     -# Save current firewall rules on restart.
+==> master:     -#   Value: yes|no,  default: no
+==> master:     -# Saves all firewall rules to /etc/sysconfig/ip6tables if firewall gets
+==> master:     -# restarted.
+==> master: 
+==> master:      IP6TABLES_SAVE_ON_RESTART="no"
+==> master:     -
+==> master: 
+==> master:     -# Save (and restore) rule and chain counter.
+==> master:     -#   Value: yes|no,  default: no
+==> master: 
+==> master:     -# Save counters for rules and chains to /etc/sysconfig/ip6tables if
+==> master:     -# 'service ip6tables save' is called or on stop or restart if SAVE_ON_STOP or
+==> master:     -# SAVE_ON_RESTART is enabled.
+==> master:      IP6TABLES_SAVE_COUNTER="no"
+==> master: 
+==> master:     -
+==> master: 
+==> master:     -# Numeric status output
+==> master:     
+==> master: -#   Value: yes|no,  default: yes
+==> master:     -# Print IP addresses and port numbers in numeric format in the status output.
+==> master:      IP6TABLES_STATUS_NUMERIC="yes"
+==> master:     -
+==> master:     -# Verbose status output
+==> master: 
+==> master:     
+==> master: -#   Value: yes|no,  default: yes
+==> master:     -# Print info about the number of packets and bytes plus the "input-" and
+==> master:     -# "outputdevice" in the status output.
+==> master: 
+==> master:     
+==> master:  IP6TABLES_STATUS_VERBOSE="no"
+==> master: 
+==> master:     -
+==> master: 
+==> master:     -# Status output with numbered lines
+==> master:     
+==> master: -#   Value: yes|no,  default: yes
+==> master:     -# Print a counter/number for every rule in the status output.
+==> master: 
+==> master:      IP6TABLES_STATUS_LINENUMBERS="yes"
+==> master: 
+==> master:     -
+==> master: 
+==> master:     
+==> master: -# Reload sysctl settings on start and restart
+==> master: 
+==> master:     -#   Default: -none-
+==> master:     
+==> master: -# Space separated list of sysctl items which are to be reloaded on start.
+==> master:     
+==> master: -# List items will be matched by fgrep.
+==> master:     
+==> master: -#IP6TABLES_SYSCTL_LOAD_LIST=".nf_conntrack .bridge-nf"
+==> master: 
+==> master:     - restore selinux security context
+==> master:   * service[iptables] action enable
+==> master: [2016-12-18T18:33:47+00:00] INFO: service[iptables] enabled
+==> master:     - enable service service[iptables]
+==> master:   * service[iptables] action start
+==> master: [2016-12-18T18:33:47+00:00] INFO: service[iptables] started
+==> master: 
+==> master:     - start service service[iptables]
+==> master: Recipe: cookbook-openshift3::common
+==> master:   * yum_repository[centos-openshift-origin] action create
+==> master:     * template[/etc/yum.repos.d/centos-openshift-origin.repo] action create
+==> master: [2016-12-18T18:33:47+00:00] INFO: template[/etc/yum.repos.d/centos-openshift-origin.repo] created file /etc/yum.repos.d/centos-openshift-origin.repo
+==> master:       - create new file /etc/yum.repos.d/centos-openshift-origin.repo
+==> master: [2016-12-18T18:33:47+00:00] INFO: template[/etc/yum.repos.d/centos-openshift-origin.repo] updated file contents /etc/yum.repos.d/centos-openshift-origin.repo
+==> master: 
+==> master:       - update content in file /etc/yum.repos.d/centos-openshift-origin.repo from none to 8da35f
+==> master:       --- /etc/yum.repos.d/centos-openshift-origin.repo	2016-12-18 18:33:47.941385499 +0000
+==> master:       +++ /etc/yum.repos.d/.chef-centos-openshift-origin20161218-20638-96t7jd.repo	2016-12-18 18:33:47.941385499 +0000
+==> master:       @@ -1 +1,9 @@
+==> master:       
+==> master: +# This file was generated by Chef
+==> master: 
+==> master:       +# Do NOT modify this file by hand.
+==> master:       +
+==> master: 
+==> master:       +[centos-openshift-origin]
+==> master:       +name=Centos-openshift-origin aPaaS Repository
+==> master:       +baseurl=http://mirror.centos.org/centos/7/paas/x86_64/openshift-origin/
+==> master:       +enabled=1
+==> master:       +gpgcheck=0
+==> master: [2016-12-18T18:33:47+00:00] INFO: template[/etc/yum.repos.d/centos-openshift-origin.repo] mode changed to 644
+==> master: 
+==> master:       - change mode from '' to '0644'
+==> master: 
+==> master:       - restore selinux security context
+==> master: [2016-12-18T18:33:47+00:00] INFO: template[/etc/yum.repos.d/centos-openshift-origin.repo] sending run action to execute[yum clean metadata centos-openshift-origin] (immediate)
+==> master:     * execute[yum clean metadata centos-openshift-origin] action run
+==> master: 
+==> master:       [execute] Loaded plugins: fastestmirror
+==> master:                 Cleaning repos: centos-openshift-origin
+==> master:                 2 metadata files removed
+==> master:                 6 sqlite files removed
+==> master:                 0 metadata files removed
+==> master: [2016-12-18T18:33:48+00:00] INFO: execute[yum clean metadata centos-openshift-origin] ran successfully
+==> master:       - execute yum clean metadata --disablerepo=* --enablerepo=centos-openshift-origin
+==> master: [2016-12-18T18:33:48+00:00] INFO: template[/etc/yum.repos.d/centos-openshift-origin.repo] sending run action to execute[yum-makecache-centos-openshift-origin] (immediate)
+==> master:     * execute[yum-makecache-centos-openshift-origin] action run
+==> master: [2016-12-18T18:33:48+00:00] INFO: execute[yum-makecache-centos-openshift-origin] ran successfully
+==> master: 
+==> master:       - execute yum -q -y makecache --disablerepo=* --enablerepo=centos-openshift-origin
+==> master: [2016-12-18T18:33:48+00:00] INFO: template[/etc/yum.repos.d/centos-openshift-origin.repo] sending create action to ruby_block[yum-cache-reload-centos-openshift-origin] (immediate)
+==> master:     * ruby_block[yum-cache-reload-centos-openshift-origin] action create
+==> master: [2016-12-18T18:33:48+00:00] INFO: ruby_block[yum-cache-reload-centos-openshift-origin] called
+==> master: 
+==> master:       - execute the ruby block yum-cache-reload-centos-openshift-origin
+==> master: 
+==> master:     * execute[yum clean metadata centos-openshift-origin] action nothing (skipped due to action :nothing)
+==> master:     * execute[yum-makecache-centos-openshift-origin] action nothing (skipped due to action :nothing)
+==> master:     * ruby_block[yum-cache-reload-centos-openshift-origin] action nothing (skipped due to action :nothing)
+==> master:   
+==> master:   * service[firewalld] action stop
+==> master:  (up to date)
+==> master:   * service[firewalld] action disable
+==> master:  (up to date)
+==> master:   * yum_package[deltarpm] action install
+==> master: [2016-12-18T18:33:51+00:00] INFO: yum_package[deltarpm] installing deltarpm-3.6-3.el7 from base repository
+==> master: [2016-12-18T18:33:53+00:00] INFO: yum_package[deltarpm] installed deltarpm at 3.6-3.el7
+==> master: 
+==> master:     - install version 3.6-3.el7 of package deltarpm
+==> master:   * yum_package[libselinux-python] action install
+==> master:  (up to date)
+==> master:   * yum_package[wget] action install (up to date)
+==> master:   * yum_package[vim-enhanced] action install[2016-12-18T18:33:53+00:00] INFO: yum_package[vim-enhanced] installing vim-enhanced-7.4.160-1.el7 from base repository
+==> master: [2016-12-18T18:34:00+00:00] INFO: yum_package[vim-enhanced] installed vim-enhanced at 7.4.160-1.el7
+==> master: 
+==> master:     - install version 7.4.160-1.el7 of package vim-enhanced
+==> master:   * yum_package[net-tools] action install
+==> master:  (up to date)
+==> master:   * yum_package[bind-utils] action install[2016-12-18T18:34:01+00:00] INFO: yum_package[bind-utils] installing bind-utils-9.9.4-38.el7_3 from updates repository
+==> master: [2016-12-18T18:34:04+00:00] INFO: yum_package[bind-utils] installed bind-utils at 9.9.4-38.el7_3
+==> master: 
+==> master:     - install version 9.9.4-38.el7_3 of package bind-utils
+==> master:   * yum_package[git] action install
+==> master: [2016-12-18T18:34:04+00:00] INFO: yum_package[git] installing git-1.8.3.1-6.el7_2.1 from base repository
+==> master: [2016-12-18T18:34:11+00:00] INFO: yum_package[git] installed git at 1.8.3.1-6.el7_2.1
+==> master: 
+==> master:     - install version 1.8.3.1-6.el7_2.1 of package git
+==> master:   * yum_package[bash-completion] action install
+==> master: [2016-12-18T18:34:11+00:00] INFO: yum_package[bash-completion] installing bash-completion-2.1-6.el7 from base repository
+==> master: [2016-12-18T18:34:12+00:00] INFO: yum_package[bash-completion] installed bash-completion at 2.1-6.el7
+==> master: 
+==> master:     - install version 2.1-6.el7 of package bash-completion
+==> master:   * yum_package[bash-completion] action install
+==> master:  (up to date)
+==> master:   * yum_package[dnsmasq] action install (up to date)
+==> master:   * yum_package[docker] action install[2016-12-18T18:34:13+00:00] INFO: yum_package[docker] installing docker-1.10.3-59.el7.centos from extras repository
+==> master: [2016-12-18T18:34:30+00:00] INFO: yum_package[docker] installed docker at 1.10.3-59.el7.centos
+==> master: 
+==> master:     - install version 1.10.3-59.el7.centos of package docker
+==> master:   * bash[Configure Docker to use the default FS type for master] action run
+==> master:  (skipped due to not_if)
+==> master:   * template[/etc/sysconfig/docker-storage-setup] action create
+==> master: [2016-12-18T18:34:30+00:00] INFO: template[/etc/sysconfig/docker-storage-setup] backed up to /var/chef/backup/etc/sysconfig/docker-storage-setup.chef-20161218183430.668941
+==> master: [2016-12-18T18:34:30+00:00] INFO: template[/etc/sysconfig/docker-storage-setup] updated file contents /etc/sysconfig/docker-storage-setup
+==> master: 
+==> master:     - update content in file /etc/sysconfig/docker-storage-setup from bf3e10 to d683e5
+==> master:     --- /etc/sysconfig/docker-storage-setup	2016-11-18 13:30:12.000000000 +0000
+==> master:     +++ /etc/sysconfig/.chef-docker-storage-setup20161218-20638-chrvsz	2016-12-18 18:34:30.665737000 +0000
+==> master:     @@ -1,5 +1,28 @@
+==> master:     -# Edit this file to override any configuration options specified in
+==> master:     -# /usr/lib/docker-storage-setup/docker-storage-setup.
+==> master:     +# This section reads the config file (/etc/sysconfig/docker-storage-setup)
+==> master:     +# Currently supported options:
+==> master:      #
+==> master:     -# For more details refer to "man docker-storage-setup"
+==> master:     +# DEVS=
+==> master:     +# A quoted, space-separated list of devices to be used.  This currently
+==> master:     +# expects the devices to be unpartitioned drives.  If "VG" is not specified,
+==> master:     +# then use of the root disk's extra space is implied.
+==> master:     +#
+==> master:     +# Ex. DEVS=/dev/vdb
+==> master:     +# VG=
+==> master:     +# The volume group to use for docker storage.  Defaults to the
+==> master:     +# volume group where the root filesystem resides.  If VG is specified and the
+==> master:     +# volume group does not exist, it will be created (which requires that "DEVS"
+==> master:     +# be nonempty, since we don't currently support putting a second partition on
+==> master:     +# the root disk).
+==> master:     +#
+==> master:     +# Ex. VG=docker-vg
+==> master:     +#
+==> master:     +#
+==> master:     +# DATA_SIZE=
+==> master:     +# The data size can take values acceptable to "lvcreate -L" as well as some
+==> master:     +# values acceptable to to "lvcreate -l". If user intends to pass values
+==> master:     +# acceptable to "lvcreate -l", then only those values which contains "%"
+==> master:     +# in syntax are acceptable.  If value does not contain "%" it is assumed
+==> master:     +# value is suitable for "lvcreate -L".
+==> master:     +#
+==> master:     +# Ex. DATA_SIZE=40%FREE
+==> master: 
+==> master:     - restore selinux security context
+==> master:   * template[/etc/sysconfig/docker] action create
+==> master: [2016-12-18T18:34:30+00:00] INFO: template[/etc/sysconfig/docker] backed up to /var/chef/backup/etc/sysconfig/docker.chef-20161218183430.700817
+==> master: [2016-12-18T18:34:30+00:00] INFO: template[/etc/sysconfig/docker] updated file contents /etc/sysconfig/docker
+==> master: 
+==> master:     - update content in file /etc/sysconfig/docker from efde72 to 553036
+==> master:     --- /etc/sysconfig/docker	2016-12-14 14:30:07.000000000 +0000
+==> master:     +++ /etc/sysconfig/.chef-docker20161218-20638-1er0muo	2016-12-18 18:34:30.698753500 +0000
+==> master:     @@ -1,16 +1,15 @@
+==> master:      # /etc/sysconfig/docker
+==> master:      
+==> master:      # Modify these options if you want to change the way the docker daemon runs
+==> master:     -OPTIONS='--selinux-enabled --log-driver=journald'
+==> master:     -if [ -z "${DOCKER_CERT_PATH}" ]; then
+==> master:     -    DOCKER_CERT_PATH=/etc/docker
+==> master:     -fi
+==> master:     +OPTIONS='--insecure-registry=172.30.0.0/16 --selinux-enabled'
+==> master:      
+==> master:     +DOCKER_CERT_PATH=/etc/docker
+==> master:     +
+==> master:      # If you want to add your own registry to be used for docker search and docker
+==> master:      # pull use the ADD_REGISTRY option to list a set of registries, each prepended
+==> master:      # with --add-registry flag. The first registry added will be the first registry
+==> master:      # searched.
+==> master:     -#ADD_REGISTRY='--add-registry registry.access.redhat.com'
+==> master:     +ADD_REGISTRY='--add-registry registry.access.redhat.com'
+==> master:      
+==> master:      # If you want to block registries from being used, uncomment the BLOCK_REGISTRY
+==> master:      # option and give it a set of registries, each prepended with --block-registry
+==> master:     @@ -35,9 +34,4 @@
+==> master:      # Controls the /etc/cron.daily/docker-logrotate cron job status.
+==> master:      # To disable, uncomment the line below.
+==> master:      # LOGROTATE=false
+==> master:     -#
+==> master:     -
+==> master:     -# docker-latest daemon can be used by starting the docker-latest unitfile.
+==> master:     -# To use docker-latest client, uncomment below line
+==> master:     -#DOCKERBINARY=/usr/bin/docker-latest
+==> master: 
+==> master:     - restore selinux security context
+==> master: [2016-12-18T18:34:30+00:00] INFO: template[/etc/sysconfig/docker] sending restart action to service[docker] (immediate)
+==> master: Recipe: cookbook-openshift3::default
+==> master:   * service[docker] action restart
+==> master: [2016-12-18T18:34:31+00:00] INFO: service[docker] restarted
+==> master: 
+==> master:     - restart service service[docker]
+==> master: [2016-12-18T18:34:31+00:00] INFO: template[/etc/sysconfig/docker] sending enable action to service[docker] (immediate)
+==> master:   * service[docker] action enable
+==> master: [2016-12-18T18:34:31+00:00] INFO: service[docker] enabled
+==> master: 
+==> master:     - enable service service[docker]
+==> master: Recipe: cookbook-openshift3::common
+==> master:   * ruby_block[Change HTTPD port xfer] action nothing (skipped due to action :nothing)
+==> master: Recipe: cookbook-openshift3::master
+==> master:   * yum_package[origin] action install
+==> master: [2016-12-18T18:34:31+00:00] INFO: yum_package[origin] installing origin-1.3.1-1.el7 from centos-openshift-origin repository
+==> master: [2016-12-18T18:34:42+00:00] INFO: yum_package[origin] installed origin at 1.3.1-1.el7
+==> master: 
+==> master:     - install version 1.3.1-1.el7 of package origin
+==> master:   
+==> master: * yum_package[httpd] action install
+==> master: [2016-12-18T18:34:43+00:00] INFO: yum_package[httpd] installing httpd-2.4.6-45.el7.centos from base repository
+==> master: [2016-12-18T18:34:46+00:00] INFO: yum_package[httpd] installed httpd at 2.4.6-45.el7.centos
+==> master: 
+==> master:     - install version 2.4.6-45.el7.centos of package httpd
+==> master: [2016-12-18T18:34:46+00:00] INFO: yum_package[httpd] sending run action to ruby_block[Change HTTPD port xfer] (immediate)
+==> master: Recipe: cookbook-openshift3::common
+==> master:   * ruby_block[Change HTTPD port xfer] action run
+==> master: [2016-12-18T18:34:46+00:00] INFO: ruby_block[Change HTTPD port xfer] called
+==> master: 
+==> master:     - execute the ruby block Change HTTPD port xfer
+==> master: [2016-12-18T18:34:46+00:00] INFO: ruby_block[Change HTTPD port xfer] sending restart action to service[httpd] (immediate)
+==> master: Recipe: cookbook-openshift3::default
+==> master:   * service[httpd] action restart
+==> master: [2016-12-18T18:34:46+00:00] INFO: service[httpd] restarted
+==> master: 
+==> master:     - restart service service[httpd]
+==> master: [2016-12-18T18:34:46+00:00] INFO: yum_package[httpd] sending enable action to service[httpd] (immediate)
+==> master:   * service[httpd] action enable
+==> master: [2016-12-18T18:34:46+00:00] INFO: service[httpd] enabled
+==> master: 
+==> master:     - enable service service[httpd]
+==> master: Recipe: cookbook-openshift3::master
+==> master:   * iptables_rule[firewall_master] action enable
+==> master:     * template[/etc/iptables.d/firewall_master] action create
+==> master: [2016-12-18T18:34:46+00:00] INFO: template[/etc/iptables.d/firewall_master] created file /etc/iptables.d/firewall_master
+==> master: 
+==> master:       - create new file /etc/iptables.d/firewall_master[2016-12-18T18:34:46+00:00] INFO: template[/etc/iptables.d/firewall_master] updated file contents /etc/iptables.d/firewall_master
+==> master: 
+==> master:       - update content in file /etc/iptables.d/firewall_master from none to c755e3
+==> master:       --- /etc/iptables.d/firewall_master	2016-12-18 18:34:46.321560999 +0000
+==> master:       +++ /etc/iptables.d/.chef-firewall_master20161218-20638-kcvwij	2016-12-18 18:34:46.321560999 +0000
+==> master:       @@ -1 +1,9 @@
+==> master:       +-A INPUT -m state --state NEW -m comment --comment "etcd embedded" -m tcp -p tcp --dport 4001 -j ACCEPT
+==> master:       +-A INPUT -m state --state NEW -m comment --comment "OpenShift api https" -m tcp -p tcp --dport 8443 -j ACCEPT
+==> master:       +-A INPUT -m state --state NEW -m comment --comment "OpenShift dns tcp" -m tcp -p tcp --dport 8053 -j ACCEPT
+==> master:       +-A INPUT -m state --state NEW -m comment --comment "OpenShift dns udp" -m udp -p udp --dport 8053 -j ACCEPT
+==> master:       +-A INPUT -m state --state NEW -m comment --comment "OpenShift dns tcp" -m tcp -p tcp --dport 53 -j ACCEPT
+==> master:       +-A INPUT -m state --state NEW -m comment --comment "OpenShift dns udp" -m udp -p udp --dport 53 -j ACCEPT
+==> master:       +-A INPUT -m state --state NEW -m comment --comment "Fluentd td-agent tcp" -m tcp -p tcp --dport 24224 -j ACCEPT
+==> master:       +-A INPUT -m state --state NEW -m comment --comment "Fluentd td-agent udp" -m udp -p udp --dport 24224 -j ACCEPT[2016-12-18T18:34:46+00:00] INFO: template[/etc/iptables.d/firewall_master] mode changed to 644
+==> master: 
+==> master:       - change mode from '' to '0644'
+==> master: 
+==> master:       - restore selinux security context
+==> master:   
+==> master:   * directory[/etc/origin/master] action create
+==> master: [2016-12-18T18:34:46+00:00] INFO: directory[/etc/origin/master] created directory /etc/origin/master
+==> master: 
+==> master:     - create new directory /etc/origin/master
+==> master: 
+==> master:     - restore selinux security context
+==> master:   * template[/etc/origin/master/session-secrets.yaml] action create_if_missing
+==> master: [2016-12-18T18:34:46+00:00] INFO: template[/etc/origin/master/session-secrets.yaml] created file /etc/origin/master/session-secrets.yaml
+==> master: 
+==> master:     - create new file /etc/origin/master/session-secrets.yaml[2016-12-18T18:34:46+00:00] INFO: template[/etc/origin/master/session-secrets.yaml] updated file contents /etc/origin/master/session-secrets.yaml
+==> master: 
+==> master:     - update content in file /etc/origin/master/session-secrets.yaml from none to 4cebdb
+==> master:     --- /etc/origin/master/session-secrets.yaml	2016-12-18 18:34:46.413607000 +0000
+==> master:     +++ /etc/origin/master/.chef-session-secrets20161218-20638-1xmylj2.yaml	2016-12-18 18:34:46.413607000 +0000
+==> master:     @@ -1 +1,7 @@
+==> master:     +apiVersion: v1
+==> master:     +kind: SessionSecrets
+==> master:     +secrets:
+==> master:     +- authentication: "Ce5yJYIYrWmcLk+IwOXn97kyPHzjj2nl"
+==> master:     +  encryption: "W1aiu73RT4sVWt4zDt7TY8E/kWic0K0/"
+==> master:     +
+==> master: 
+==> master:     - restore selinux security context
+==> master:   * remote_directory[/usr/share/openshift/examples] action create (skipped due to only_if)
+==> master:   * remote_directory[/usr/share/openshift/hosted] action create
+==> master: [2016-12-18T18:34:46+00:00] INFO: remote_directory[/usr/share/openshift/hosted] created directory /usr/share/openshift/hosted
+==> master: 
+==> master:     - create new directory /usr/share/openshift/hosted
+==> master: [2016-12-18T18:34:46+00:00] INFO: remote_directory[/usr/share/openshift/hosted] owner changed to 0
+==> master: [2016-12-18T18:34:46+00:00] INFO: remote_directory[/usr/share/openshift/hosted] group changed to 0
+==> master: 
+==> master:     - change owner from '' to 'root'
+==> master:     - change group from '' to 'root'
+==> master: 
+==> master:     - restore selinux security context
+==> master: 
+==> master:   Recipe: <Dynamically Defined Resource>
+==> master:     * cookbook_file[/usr/share/openshift/hosted/logging-deployer.yaml] action create
+==> master: [2016-12-18T18:34:46+00:00] INFO: cookbook_file[/usr/share/openshift/hosted/logging-deployer.yaml] created file /usr/share/openshift/hosted/logging-deployer.yaml
+==> master: 
+==> master:       - create new file /usr/share/openshift/hosted/logging-deployer.yaml
+==> master: [2016-12-18T18:34:46+00:00] INFO: cookbook_file[/usr/share/openshift/hosted/logging-deployer.yaml] updated file contents /usr/share/openshift/hosted/logging-deployer.yaml
+==> master: 
+==> master:       - update content in file /usr/share/openshift/hosted/logging-deployer.yaml from none to 6342cb
+==> master:       --- /usr/share/openshift/hosted/logging-deployer.yaml	2016-12-18 18:34:46.464632500 +0000
+==> master:       +++ /usr/share/openshift/hosted/.chef-logging-deployer20161218-20638-1tiohre.yaml	2016-12-18 18:34:46.464632500 +0000
+==> master:       @@ -1 +1,326 @@
+==> master:       +apiVersion: "v1"
+==> master:       +kind: "List"
+==> master:       +items:
+==> master:       +-
+==> master:       +  apiVersion: "v1"
+==> master:       +  kind: "Template"
+==> master:       +  metadata:
+==> master:       +    name: logging-deployer-account-template
+==> master:       +    annotations:
+==> master:       +      description: "Template for creating the deployer account and roles needed for the aggregated logging deployer. Create as cluster-admin."
+==> master:       +      tags: "infrastructure"
+==> master:       +  objects:
+==> master:       +  -
+==> master:       +    apiVersion: v1
+==> master:       +    kind: ServiceAccount
+==> master:       +    name: logging-deployer
+==> master:       +    metadata:
+==> master:       +      name: logging-deployer
+==> master:       +      labels:
+==> master:       +        logging-infra: deployer
+==> master:       +        provider: openshift
+==> master:       +        component: deployer
+==> master:       +  -
+==> master:       +    apiVersion: v1
+==> master:       +    kind: ServiceAccount
+==> master:       +    metadata:
+==> master:       +      name: aggregated-logging-kibana
+==> master:       +  -
+==> master:       +    apiVersion: v1
+==> master:       +    kind: ServiceAccount
+==> master:       +    metadata:
+==> master:       +      name: aggregated-logging-elasticsearch
+==> master:       +  -
+==> master:       +    apiVersion: v1
+==> master:       +    kind: ServiceAccount
+==> master:       +    metadata:
+==> master:       +      name: aggregated-logging-fluentd
+==> master:       +  -
+==> master:       +    apiVersion: v1
+==> master:       +    kind: ServiceAccount
+==> master:       +    metadata:
+==> master:       +      name: aggregated-logging-curator
+==> master:       +  - apiVersion: v1
+==> master:       +    kind: ClusterRole
+==> master:       +    metadata:
+==> master:       +      name: oauth-editor
+==> master:       +    rules:
+==> master:       +    - resources:
+==> master:       +      - oauthclients
+==> master:       +      verbs:
+==> master:       +      - create
+==> master:       +      - delete
+==> master:       +  - apiVersion: v1
+==> master:       +    kind: ClusterRole
+==> master:       +    metadata:
+==> master:       +      name: daemonset-admin
+==> master:       +    rules:
+==> master:       +    - resources:
+==> master:       +      - daemonsets
+==> master:       +      apiGroups:
+==> master:       +      - extensions
+==> master:       +      verbs:
+==> master:       +      - create
+==> master:       +      - get
+==> master:       +      - list
+==> master:       +      - watch
+==> master:       +      - delete
+==> master:       +      - update
+==> master:       +  -
+==> master:       +    apiVersion: v1
+==> master:       +    kind: RoleBinding
+==> master:       +    metadata:
+==> master:       +      name: logging-deployer-edit-role
+==> master:       +    roleRef:
+==> master:       +      kind: ClusterRole
+==> master:       +      name: edit
+==> master:       +    subjects:
+==> master:       +    - kind: ServiceAccount
+==> master:       +      name: logging-deployer
+==> master:       +  -
+==> master:       +    apiVersion: v1
+==> master:       +    kind: RoleBinding
+==> master:       +    metadata:
+==> master:       +      name: logging-deployer-dsadmin-role
+==> master:       +    roleRef:
+==> master:       +      kind: ClusterRole
+==> master:       +      name: daemonset-admin
+==> master:       +    subjects:
+==> master:       +    - kind: ServiceAccount
+==> master:       +      name: logging-deployer
+==> master:       +-
+==> master:       +  apiVersion: "v1"
+==> master:       +  kind: "Template"
+==> master:       +  metadata:
+==> master:       +    name: logging-deployer-template
+==> master:       +    annotations:
+==> master:       +      description: "Template for running the aggregated logging deployer in a pod. Requires empowered 'logging-deployer' service account."
+==> master:       +      tags: "infrastructure"
+==> master:       +  labels:
+==> master:       +    logging-infra: deployer
+==> master:       +    provider: openshift
+==> master:       +  objects:
+==> master:       +  -
+==> master:       +    apiVersion: v1
+==> master:       +    kind: Pod
+==> master:       +    metadata:
+==> master:       +      generateName: logging-deployer-
+==> master:       +    spec:
+==> master:       +      containers:
+==> master:       +      - image: ${IMAGE_PREFIX}logging-deployment:${IMAGE_VERSION}
+==> master:       +        imagePullPolicy: Always
+==> master:       +        name: deployer
+==> master:       +        volumeMounts:
+==> master:       +        - name: empty
+==> master:       +          mountPath: /etc/deploy
+==> master:       +        env:
+==> master:       +          - name: PROJECT
+==> master:       +            valueFrom:
+==> master:       +              fieldRef:
+==> master:       +                fieldPath: metadata.namespace
+==> master:       +          - name: IMAGE_PREFIX
+==> master:       +            value: ${IMAGE_PREFIX}
+==> master:       +          - name: IMAGE_VERSION
+==> master:       +            value: ${IMAGE_VERSION}
+==> master:       +          - name: IMAGE_PULL_SECRET
+==> master:       +            value: ${IMAGE_PULL_SECRET}
+==> master:       +          - name: INSECURE_REGISTRY
+==> master:       +            value: ${INSECURE_REGISTRY}
+==> master:       +          - name: ENABLE_OPS_CLUSTER
+==> master:       +            value: ${ENABLE_OPS_CLUSTER}
+==> master:       +          - name: KIBANA_HOSTNAME
+==> master:       +            value: ${KIBANA_HOSTNAME}
+==> master:       +          - name: KIBANA_OPS_HOSTNAME
+==> master:       +            value: ${KIBANA_OPS_HOSTNAME}
+==> master:       +          - name: PUBLIC_MASTER_URL
+==> master:       +            value: ${PUBLIC_MASTER_URL}
+==> master:       +          - name: MASTER_URL
+==> master:       +            value: ${MASTER_URL}
+==> master:       +          - name: ES_INSTANCE_RAM
+==> master:       +            value: ${ES_INSTANCE_RAM}
+==> master:       +          - name: ES_PVC_SIZE
+==> master:       +            value: ${ES_PVC_SIZE}
+==> master:       +          - name: ES_PVC_PREFIX
+==> master:       +            value: ${ES_PVC_PREFIX}
+==> master:       +          - name: ES_PVC_DYNAMIC
+==> master:       +            value: ${ES_PVC_DYNAMIC}
+==> master:       +          - name: ES_CLUSTER_SIZE
+==> master:       +            value: ${ES_CLUSTER_SIZE}
+==> master:       +          - name: ES_NODE_QUORUM
+==> master:       +            value: ${ES_NODE_QUORUM}
+==> master:       +          - name: ES_RECOVER_AFTER_NODES
+==> master:       +            value: ${ES_RECOVER_AFTER_NODES}
+==> master:       +          - name: ES_RECOVER_EXPECTED_NODES
+==> master:       +            value: ${ES_RECOVER_EXPECTED_NODES}
+==> master:       +          - name: ES_RECOVER_AFTER_TIME
+==> master: 
+==> master:       +            value: ${ES_RECOVER_AFTER_TIME}
+==> master:       +          - name: ES_OPS_INSTANCE_RAM
+==> master:       +            value: ${ES_OPS_INSTANCE_RAM}
+==> master:       +          - name: ES_OPS_PVC_SIZE
+==> master:       +            value: ${ES_OPS_PVC_SIZE}
+==> master:       +          - name: ES_OPS_PVC_PREFIX
+==> master:       +            value: ${ES_OPS_PVC_PREFIX}
+==> master:       +          - name: ES_OPS_PVC_DYNAMIC
+==> master:       +            value: ${ES_OPS_PVC_DYNAMIC}
+==> master:       +          - name: ES_OPS_CLUSTER_SIZE
+==> master:       +            value: ${ES_OPS_CLUSTER_SIZE}
+==> master:       +          - name: ES_OPS_NODE_QUORUM
+==> master:       +            value: ${ES_OPS_NODE_QUORUM}
+==> master:       +          - name: ES_OPS_RECOVER_AFTER_NODES
+==> master:       +            value: ${ES_OPS_RECOVER_AFTER_NODES}
+==> master:       +          - name: ES_OPS_RECOVER_EXPECTED_NODES
+==> master:       +            value: ${ES_OPS_RECOVER_EXPECTED_NODES}
+==> master:       +          - name: ES_OPS_RECOVER_AFTER_TIME
+==> master: 
+==> master:       +            value: ${ES_OPS_RECOVER_AFTER_TIME}
+==> master:       +          - name: FLUENTD_NODESELECTOR
+==> master:       +            value: ${FLUENTD_NODESELECTOR}
+==> master:       +          - name: ES_NODESELECTOR
+==> master:       +            value: ${ES_NODESELECTOR}
+==> master:       
+==> master: +          - name: ES_OPS_NODESELECTOR
+==> master:       +            value: ${ES_OPS_NODESELECTOR}
+==> master: 
+==> master:       
+==> master: +          - name: KIBANA_NODESELECTOR
+==> master: 
+==> master:       +            value: ${KIBANA_NODESELECTOR}
+==> master: 
+==> master:       +          - name: KIBANA_OPS_NODESELECTOR
+==> master: 
+==> master:       
+==> master: +            value: ${KIBANA_OPS_NODESELECTOR}
+==> master:       +          - name: CURATOR_NODESELECTOR
+==> master:       +            value: ${CURATOR_NODESELECTOR}
+==> master:       +          - name: CURATOR_OPS_NODESELECTOR
+==> master:       +            value: ${CURATOR_OPS_NODESELECTOR}
+==> master:       +          - name: MODE
+==> master:       +            value: ${MODE}
+==> master: 
+==> master:       +      dnsPolicy: ClusterFirst
+==> master: 
+==> master:       +      restartPolicy: Never
+==> master:       +      serviceAccount: logging-deployer
+==> master: 
+==> master:       +      volumes:
+==> master: 
+==> master:       +      - name: empty
+==> master:       +        emptyDir: {}
+==> master:       +  parameters:
+==> master:       +  -
+==> master:       +    description: "The mode that the deployer runs in."
+==> master:       +    name: MODE
+==> master:       +    value: "install"
+==> master:       +  -
+==> master:       +    description: 'Specify prefix for logging components; e.g. for "openshift/origin-logging-deployer:v1.1", set prefix "openshift/origin-"'
+==> master:       +    name: IMAGE_PREFIX
+==> master:       +    value: "docker.io/openshift/origin-"
+==> master:       +  -
+==> master:       +    description: 'Specify version for logging components; e.g. for "openshift/origin-logging-deployer:v1.1", set version "v1.1"'
+==> master:       +    name: IMAGE_VERSION
+==> master:       +    value: "latest"
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Specify the name of an existing pull secret to be used for pulling component images from an authenticated registry."
+==> master:       +    name: IMAGE_PULL_SECRET
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Allow the registry for logging component images to be non-secure (not secured with a certificate signed by a known CA)"
+==> master:       +    name: INSECURE_REGISTRY
+==> master:       +    value: "false"
+==> master:       +  -
+==> master:       +    description: "(Deprecated) If true, set up to use a second ES cluster for ops logs."
+==> master:       +    name: ENABLE_OPS_CLUSTER
+==> master:       +    value: "false"
+==> master:       +  -
+==> master:       +    description: "(Deprecated) External hostname where clients will reach kibana"
+==> master:       +    name: KIBANA_HOSTNAME
+==> master:       +    value: "kibana.example.com"
+==> master:       +  -
+==> master:       +    description: "(Deprecated) External hostname at which admins will visit the ops Kibana."
+==> master:       +    name: KIBANA_OPS_HOSTNAME
+==> master:       +    value: kibana-ops.example.com
+==> master:       +  -
+==> master:       +    description: "(Deprecated) External URL for the master, for OAuth purposes"
+==> master:       +    name: PUBLIC_MASTER_URL
+==> master:       +    value: "https://localhost:8443"
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Internal URL for the master, for authentication retrieval"
+==> master:       +    name: MASTER_URL
+==> master:       +    value: "https://kubernetes.default.svc.cluster.local"
+==> master:       +  -
+==> master:       +    description: "(Deprecated) How many instances of ElasticSearch to deploy."
+==> master:       +    name: ES_CLUSTER_SIZE
+==> master:       +    value: "1"
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Amount of RAM to reserve per ElasticSearch instance."
+==> master:       +    name: ES_INSTANCE_RAM
+==> master:       +    value: "8G"
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Size of the PersistentVolumeClaim to create per ElasticSearch instance, e.g. 100G. If empty, no PVCs will be created and emptyDir volumes are used instead."
+==> master:       +    name: ES_PVC_SIZE
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Prefix for the names of PersistentVolumeClaims to be created; a number will be appended per instance. If they don't already exist, they will be created with size ES_PVC_SIZE."
+==> master:       +    name: ES_PVC_PREFIX
+==> master:       +    value: "logging-es-"
+==> master:       +  -
+==> master:       +    description: '(Deprecated) Set to "true" to request dynamic provisioning (if enabled for your cluster) of a PersistentVolume for the ES PVC. '
+==> master:       +    name: ES_PVC_DYNAMIC
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Number of nodes required to elect a master (ES minimum_master_nodes). By default, derived from ES_CLUSTER_SIZE / 2 + 1."
+==> master:       +    name: ES_NODE_QUORUM
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Number of nodes required to be present before the cluster will recover from a full restart. By default, one fewer than ES_CLUSTER_SIZE."
+==> master:       +    name: ES_RECOVER_AFTER_NODES
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Number of nodes desired to be present before the cluster will recover from a full restart. By default, ES_CLUSTER_SIZE."
+==> master:       +    name: ES_RECOVER_EXPECTED_NODES
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Timeout for *expected* nodes to be present when cluster is recovering from a full restart."
+==> master:       +    name: ES_RECOVER_AFTER_TIME
+==> master:       +    value: "5m"
+==> master:       +  -
+==> master:       +    description: "(Deprecated) How many ops instances of ElasticSearch to deploy. By default, ES_CLUSTER_SIZE."
+==> master:       +    name: ES_OPS_CLUSTER_SIZE
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Amount of RAM to reserve per ops ElasticSearch instance."
+==> master:       +    name: ES_OPS_INSTANCE_RAM
+==> master:       +    value: "8G"
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Size of the PersistentVolumeClaim to create per ElasticSearch ops instance, e.g. 100G. If empty, no PVCs will be created and emptyDir volumes are used instead."
+==> master:       +    name: ES_OPS_PVC_SIZE
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Prefix for the names of PersistentVolumeClaims to be created; a number will be appended per instance. If they don't already exist, they will be created with size ES_OPS_PVC_SIZE."
+==> master:       +    name: ES_OPS_PVC_PREFIX
+==> master:       +    value: "logging-es-ops-"
+==> master:       +  -
+==> master:       +    description: '(Deprecated) Set to "true" to request dynamic provisioning (if enabled for your cluster) of a PersistentVolume for the ES ops PVC. '
+==> master:       +    name: ES_OPS_PVC_DYNAMIC
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Number of ops nodes required to elect a master (ES minimum_master_nodes). By default, derived from ES_CLUSTER_SIZE / 2 + 1."
+==> master:       +    name: ES_OPS_NODE_QUORUM
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Number of ops nodes required to be present before the cluster will recover from a full restart. By default, one fewer than ES_OPS_CLUSTER_SIZE."
+==> master:       +    name: ES_OPS_RECOVER_AFTER_NODES
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Number of ops nodes desired to be present before the cluster will recover from a full restart. By default, ES_OPS_CLUSTER_SIZE."
+==> master:       +    name: ES_OPS_RECOVER_EXPECTED_NODES
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Timeout for *expected* ops nodes to be present when cluster is recovering from a full restart."
+==> master:       +    name: ES_OPS_RECOVER_AFTER_TIME
+==> master:       +    value: "5m"
+==> master:       +  -
+==> master:       +    description: "(Deprecated) The nodeSelector used for the Fluentd DaemonSet."
+==> master:       +    name: FLUENTD_NODESELECTOR
+==> master:       +    value: "logging-infra-fluentd=true"
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Node selector Elasticsearch cluster (label=value)."
+==> master:       +    name: ES_NODESELECTOR
+==> master:       +    value: ""
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Node selector Elasticsearch operations cluster (label=value)."
+==> master:       +    name: ES_OPS_NODESELECTOR
+==> master:       +    value: ""
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Node selector Kibana cluster (label=value)."
+==> master:       +    name: KIBANA_NODESELECTOR
+==> master:       +    value: ""
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Node selector Kibana operations cluster (label=value)."
+==> master:       +    name: KIBANA_OPS_NODESELECTOR
+==> master:       +    value: ""
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Node selector Curator (label=value)."
+==> master:       +    name: CURATOR_NODESELECTOR
+==> master:       +    value: ""
+==> master:       +  -
+==> master:       +    description: "(Deprecated) Node selector operations Curator (label=value)."
+==> master:       +    name: CURATOR_OPS_NODESELECTOR
+==> master:       +    value: ""[2016-12-18T18:34:46+00:00] INFO: cookbook_file[/usr/share/openshift/hosted/logging-deployer.yaml] mode changed to 644
+==> master: 
+==> master:       - change mode from '' to '0644'
+==> master: 
+==> master:       
+==> master: - restore selinux security context
+==> master:     * cookbook_file[/usr/share/openshift/hosted/metrics-deployer.yaml] action create
+==> master: [2016-12-18T18:34:46+00:00] INFO: cookbook_file[/usr/share/openshift/hosted/metrics-deployer.yaml] created file /usr/share/openshift/hosted/metrics-deployer.yaml
+==> master: 
+==> master:       - create new file /usr/share/openshift/hosted/metrics-deployer.yaml
+==> master: [2016-12-18T18:34:46+00:00] INFO: cookbook_file[/usr/share/openshift/hosted/metrics-deployer.yaml] updated file contents /usr/share/openshift/hosted/metrics-deployer.yaml
+==> master: 
+==> master:       - update content in file /usr/share/openshift/hosted/metrics-deployer.yaml from none to 8c4613
+==> master:       --- /usr/share/openshift/hosted/metrics-deployer.yaml	2016-12-18 18:34:46.506653500 +0000
+==> master:       +++ /usr/share/openshift/hosted/.chef-metrics-deployer20161218-20638-1kqa0vu.yaml	2016-12-18 18:34:46.506653500 +0000
+==> master:       @@ -1 +1,163 @@
+==> master:       +#!/bin/bash
+==> master:       +#
+==> master:       +# Copyright 2014-2015 Red Hat, Inc. and/or its affiliates
+==> master:       +# and other contributors as indicated by the @author tags.
+==> master:       +#
+==> master:       +# Licensed under the Apache License, Version 2.0 (the "License");
+==> master:       +# you may not use this file except in compliance with the License.
+==> master:       +# You may obtain a copy of the License at
+==> master:       +#
+==> master:       +#    http://www.apache.org/licenses/LICENSE-2.0
+==> master:       +#
+==> master:       +# Unless required by applicable law or agreed to in writing, software
+==> master:       +# distributed under the License is distributed on an "AS IS" BASIS,
+==> master:       +# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+==> master:       +# See the License for the specific language governing permissions and
+==> master:       +# limitations under the License.
+==> master:       +#
+==> master:       +
+==> master:       +apiVersion: "v1"
+==> master:       +kind: "Template"
+==> master:       +metadata:
+==> master:       +  name: metrics-deployer-template
+==> master:       +  annotations:
+==> master:       +    description: "Template for deploying the required Metrics integration. Requires cluster-admin 'metrics-deployer' service account and 'metrics-deployer' secret."
+==> master:       +    tags: "infrastructure"
+==> master:       +labels:
+==> master:       +  metrics-infra: deployer
+==> master:       +  provider: openshift
+==> master:       +  component: deployer
+==> master:       +objects:
+==> master:       +-
+==> master:       +  apiVersion: v1
+==> master:       +  kind: Pod
+==> master:       +  metadata:
+==> master:       +    generateName: metrics-deployer-
+==> master:       +  spec:
+==> master:       +    securityContext: {}
+==> master:       +    containers:
+==> master:       +    - image: ${IMAGE_PREFIX}metrics-deployer:${IMAGE_VERSION}
+==> master:       +      name: deployer
+==> master:       +      securityContext: {}
+==> master:       +      volumeMounts:
+==> master:       +      - name: secret
+==> master:       +        mountPath: /secret
+==> master:       +        readOnly: true
+==> master:       +      - name: empty
+==> master:       +        mountPath: /etc/deploy
+==> master:       +      env:
+==> master:       +        - name: PROJECT
+==> master:       +          valueFrom:
+==> master:       +            fieldRef:
+==> master:       +              fieldPath: metadata.namespace
+==> master:       +        - name: POD_NAME
+==> master:       +          valueFrom:
+==> master:       +            fieldRef:
+==> master:       +              fieldPath: metadata.name
+==> master:       +        - name: IMAGE_PREFIX
+==> master:       +          value: ${IMAGE_PREFIX}
+==> master:       +        - name: IMAGE_VERSION
+==> master:       +          value: ${IMAGE_VERSION}
+==> master:       +        - name: MASTER_URL
+==> master:       +          value: ${MASTER_URL}
+==> master:       +        - name: MODE
+==> master:       +          value: ${MODE}
+==> master:       +        - name: CONTINUE_ON_ERROR
+==> master:       +          value: ${CONTINUE_ON_ERROR}
+==> master:       +        - name: REDEPLOY
+==> master:       +          value: ${REDEPLOY}
+==> master:       +        - name: IGNORE_PREFLIGHT
+==> master:       +          value: ${IGNORE_PREFLIGHT}
+==> master:       +        - name: USE_PERSISTENT_STORAGE
+==> master:       +          value: ${USE_PERSISTENT_STORAGE}
+==> master:       +        - name: DYNAMICALLY_PROVISION_STORAGE
+==> master:       +          value: ${DYNAMICALLY_PROVISION_STORAGE}
+==> master:       +        - name: HAWKULAR_METRICS_HOSTNAME
+==> master:       +          value: ${HAWKULAR_METRICS_HOSTNAME}
+==> master:       +        - name: CASSANDRA_NODES
+==> master:       +          value: ${CASSANDRA_NODES}
+==> master:       +        - name: CASSANDRA_PV_SIZE
+==> master:       +          value: ${CASSANDRA_PV_SIZE}
+==> master:       +        - name: METRIC_DURATION
+==> master:       +          value: ${METRIC_DURATION}
+==> master:       +        - name: USER_WRITE_ACCESS
+==> master:       +          value: ${USER_WRITE_ACCESS}
+==> master:       +        - name: HEAPSTER_NODE_ID
+==> master:       +          value: ${HEAPSTER_NODE_ID}
+==> master:       +        - name: METRIC_RESOLUTION
+==> master:       +          value: ${METRIC_RESOLUTION}
+==> master:       +    dnsPolicy: ClusterFirst
+==> master:       +    restartPolicy: Never
+==> master:       +    serviceAccount: metrics-deployer
+==> master:       +    volumes:
+==> master:       +    - name: empty
+==> master:       +      emptyDir: {}
+==> master:       +    - name: secret
+==> master:       +      secret:
+==> master:       +        secretName: metrics-deployer
+==> master:       +parameters:
+==> master:       +-
+==> master:       +  description: 'Specify prefix for metrics components; e.g. for "openshift/origin-metrics-deployer:latest", set prefix "openshift/origin-"'
+==> master:       +  name: IMAGE_PREFIX
+==> master:       +  value: "openshift/origin-"
+==> master:       +-
+==> master:       +  description: 'Specify version for metrics components; e.g. for "openshift/origin-metrics-deployer:latest", set version "latest"'
+==> master:       +  name: IMAGE_VERSION
+==> master:       +  value: "latest"
+==> master:       +-
+==> master:       +  description: "Internal URL for the master, for authentication retrieval"
+==> master:       +  name: MASTER_URL
+==> master:       +  value: "https://kubernetes.default.svc:443"
+==> master:       +-
+==> master:       +  description: "External hostname where clients will reach Hawkular Metrics"
+==> master:       +  name: HAWKULAR_METRICS_HOSTNAME
+==> master:       +  required: true
+==> master:       +-
+==> master:       +  description: "Can be set to: 'preflight' to perform validation before a deployment; 'deploy' to perform an initial deployment; 'refresh' to delete and redeploy all components but to keep persisted data and routes; 'redeploy' to delete and redeploy everything (losing all data in the process); 'validate' to re-run validations after a deployment"
+==> master:       +  name: MODE
+==> master:       +  value: "deploy"
+==> master:       +- 
+==> master:       +  description: "Set to true to continue even if the deployer runs into an error."
+==> master:       +  name: CONTINUE_ON_ERROR
+==> master:       +  value: "false"
+==> master:       +-
+==> master:       +  description: "(Deprecated) Turns 'deploy' mode into 'redeploy' mode, deleting and redeploying everything (losing all data in the process)"
+==> master:       +  name: REDEPLOY
+==> master:       +  value: "false"
+==> master:       +-
+==> master:       +  description: "If preflight validation is blocking deployment and you're sure you don't care about it, this will ignore the results and proceed to deploy."
+==> master:       +  name: IGNORE_PREFLIGHT
+==> master:       +  value: "false"
+==> master:       +-
+==> master:       +  description: "Set to true for persistent storage, set to false to use non persistent storage"
+==> master:       +  name: USE_PERSISTENT_STORAGE
+==> master:       +  value: "true"
+==> master:       +-
+==> master:       +  description: "Set to true to dynamically provision storage, set to false to use use pre-created persistent volumes"
+==> master:       +  name: DYNAMICALLY_PROVISION_STORAGE
+==> master:       +  value: "false"
+==> master:       +-
+==> master:       +  description: "The number of Cassandra Nodes to deploy for the initial cluster"
+==> master:       +  name: CASSANDRA_NODES
+==> master:       +  value: "1"
+==> master:       +-
+==> master:       +  description: "The persistent volume size for each of the Cassandra nodes"
+==> master:       +  name: CASSANDRA_PV_SIZE
+==> master:       +  value: "10Gi"
+==> master:       +-
+==> master:       +  description: "How many days metrics should be stored for."
+==> master:       +  name: METRIC_DURATION
+==> master:       +  value: "7"
+==> master:       +-
+==> master:       +  description: "If a user accounts should be allowed to write metrics."
+==> master:       +  name: USER_WRITE_ACCESS
+==> master:       +  value: "false"
+==> master:       +-
+==> master:       +  description: "The identifier used when generating metric ids in Hawkular"
+==> master:       +  name: HEAPSTER_NODE_ID
+==> master:       +  value: "nodename"
+==> master:       +-
+==> master:       +  description: "How often metrics should be gathered. Defaults value of '15s' for 15 seconds"
+==> master:       +  name: METRIC_RESOLUTION
+==> master:       +  value: "15s"[2016-12-18T18:34:46+00:00] INFO: cookbook_file[/usr/share/openshift/hosted/metrics-deployer.yaml] mode changed to 644
+==> master: 
+==> master:       - change mode from '' to '0644'
+==> master: 
+==> master:       - restore selinux security context
+==> master:     * cookbook_file[/usr/share/openshift/hosted/registry-console.yaml] action create
+==> master: [2016-12-18T18:34:46+00:00] INFO: cookbook_file[/usr/share/openshift/hosted/registry-console.yaml] created file /usr/share/openshift/hosted/registry-console.yaml
+==> master: 
+==> master:       
+==> master: - create new file /usr/share/openshift/hosted/registry-console.yaml
+==> master: [2016-12-18T18:34:46+00:00] INFO: cookbook_file[/usr/share/openshift/hosted/registry-console.yaml] updated file contents /usr/share/openshift/hosted/registry-console.yaml
+==> master: 
+==> master:       - update content in file /usr/share/openshift/hosted/registry-console.yaml from none to 6d5b40
+==> master:       --- /usr/share/openshift/hosted/registry-console.yaml	2016-12-18 18:34:46.538669499 +0000
+==> master:       +++ /usr/share/openshift/hosted/.chef-registry-console20161218-20638-e0tjd6.yaml	2016-12-18 18:34:46.538669499 +0000
+==> master:       @@ -1 +1,125 @@
+==> master:       +kind: Template
+==> master:       +apiVersion: v1
+==> master:       +metadata:
+==> master:       +  name: "registry-console"
+==> master:       +  annotations:
+==> master:       +    description: "Template for deploying registry web console. Requires cluster-admin."
+==> master:       +    tags: infrastructure
+==> master:       +labels:
+==> master:       +  createdBy: "registry-console-template"
+==> master:       +objects:
+==> master:       +  - kind: DeploymentConfig
+==> master:       +    apiVersion: v1
+==> master:       +    metadata:
+==> master:       +      name: "registry-console"
+==> master:       +      labels:
+==> master:       +        name: "registry-console"
+==> master:       +    spec:
+==> master:       +      triggers:
+==> master:       +      - type: ConfigChange
+==> master:       +      replicas: 1
+==> master:       +      selector:
+==> master:       +        name: "registry-console"
+==> master:       +      template:
+==> master:       +        metadata:
+==> master:       +          labels:
+==> master:       +            name: "registry-console"
+==> master:       +        spec:
+==> master:       +          containers:
+==> master:       +            - name: registry-console
+==> master:       +              image: ${IMAGE_NAME}:${IMAGE_VERSION}
+==> master:       +              ports:
+==> master:       +                - containerPort: 9090
+==> master:       +                  protocol: TCP
+==> master:       +              livenessProbe:
+==> master:       +                failureThreshold: 3
+==> master:       +                httpGet:
+==> master:       +                  path: /ping
+==> master:       +                  port: 9090
+==> master:       +                  scheme: HTTP
+==> master:       +                initialDelaySeconds: 10
+==> master:       +                periodSeconds: 10
+==> master:       +                successThreshold: 1
+==> master:       +                timeoutSeconds: 5
+==> master:       +              readinessProbe:
+==> master:       +                failureThreshold: 3
+==> master:       +                httpGet:
+==> master:       +                  path: /ping
+==> master:       +                  port: 9090
+==> master:       +                  scheme: HTTP
+==> master:       +                periodSeconds: 10
+==> master:       +                successThreshold: 1
+==> master:       +                timeoutSeconds: 5
+==> master:       +              env:
+==> master:       +                - name: OPENSHIFT_OAUTH_PROVIDER_URL
+==> master:       +                  value: "${OPENSHIFT_OAUTH_PROVIDER_URL}"
+==> master:       +                - name: OPENSHIFT_OAUTH_CLIENT_ID
+==> master:       +                  value: "${OPENSHIFT_OAUTH_CLIENT_ID}"
+==> master:       +                - name: KUBERNETES_INSECURE
+==> master:       +                  value: "false"
+==> master:       +                - name: COCKPIT_KUBE_INSECURE
+==> master:       +                  value: "false"
+==> master:       +                - name: REGISTRY_ONLY
+==> master:       +                  value: "true"
+==> master:       +                - name: REGISTRY_HOST
+==> master:       +                  value: "${REGISTRY_HOST}"
+==> master:       +  - kind: Service
+==> master:       +    apiVersion: v1
+==> master:       +    metadata:
+==> master:       +     name: "registry-console"
+==> master:       +     labels:
+==> master:       +       name: "registry-console"
+==> master:       +    spec:
+==> master:       +      type: ClusterIP
+==> master:       +      ports:
+==> master:       +        - name: registry-console
+==> master:       +          protocol: TCP
+==> master:       +          port: 9000
+==> master:       +          targetPort: 9090
+==> master:       +      selector:
+==> master:       +        name: "registry-console"
+==> master:       +  - kind: ImageStream
+==> master:       +    apiVersion: v1
+==> master:       +    metadata:
+==> master:       +      name: registry-console
+==> master:       +      annotations:
+==> master:       +        description: Atomic Registry console
+==> master:       +    spec:
+==> master:       +      tags:
+==> master:       +        - annotations: null
+==> master:       +          from:
+==> master:       +            kind: DockerImage
+==> master:       +            name: ${IMAGE_NAME}
+==> master:       +          name: ${IMAGE_VERSION}
+==> master:       +  - kind: OAuthClient
+==> master:       +    apiVersion: v1
+==> master:       +    metadata:
+==> master:       +      name: "${OPENSHIFT_OAUTH_CLIENT_ID}"
+==> master:       +      respondWithChallenges: false
+==> master:       +    secret: "${OPENSHIFT_OAUTH_CLIENT_SECRET}"
+==> master:       +    redirectURIs:
+==> master:       +      - "${COCKPIT_KUBE_URL}"
+==> master:       +parameters:
+==> master:       +  - description: "Container image name"
+==> master:       +    name: IMAGE_NAME
+==> master:       +    value: "cockpit/kubernetes"
+==> master:       +  - description: 'Specify image version; e.g. for "cockpit/kubernetes:latest", set version "latest"'
+==> master:       +    name: IMAGE_VERSION
+==> master:       +    value: latest
+==> master:       +  - description: "The public URL for the Openshift OAuth Provider, e.g. https://openshift.example.com:8443"
+==> master:       +    name: OPENSHIFT_OAUTH_PROVIDER_URL
+==> master:       +    required: true
+==> master:       +  - description: "The registry console URL. This should be created beforehand using 'oc create route passthrough --service registry-console --port registry-console -n default', e.g. https://registry-console-default.example.com"
+==> master:       +    name: COCKPIT_KUBE_URL
+==> master:       +    required: true
+==> master:       +  - description: "Oauth client secret"
+==> master:       +    name: OPENSHIFT_OAUTH_CLIENT_SECRET
+==> master:       +    from: "user[a-zA-Z0-9]{64}"
+==> master:       +    generate: expression
+==> master:       +  - description: "Oauth client id"
+==> master:       +    name: OPENSHIFT_OAUTH_CLIENT_ID
+==> master:       +    value: "cockpit-oauth-client"
+==> master:       +  - description: "The integrated registry hostname exposed via route, e.g. registry.example.com"
+==> master:       +    name: REGISTRY_HOST
+==> master:       +    required: true[2016-12-18T18:34:46+00:00] INFO: cookbook_file[/usr/share/openshift/hosted/registry-console.yaml] mode changed to 644
+==> master: 
+==> master:       - change mode from '' to '0644'
+==> master: 
+==> master:       - restore selinux security context
+==> master: 
+==> master:   
+==> master: Recipe: cookbook-openshift3::master_standalone
+==> master:   * execute[Create the master certificates] action run
+==> master: 
+==> master:     [execute] Generated new key pair as /etc/origin/master/serviceaccounts.public.key and /etc/origin/master/serviceaccounts.private.key
+==> master: [2016-12-18T18:34:49+00:00] INFO: execute[Create the master certificates] ran successfully
+==> master:     - execute /usr/bin/oadm ca create-master-certs           --hostnames=127.0.0.1,localhost,master,192.168.33.220.xip.io,openshift,openshift.default,openshift.default.svc,openshift.default.svc.cluster.local,kubernetes,kubernetes.default,kubernetes.default.svc,kubernetes.default.svc.cluster.local,172.30.0.1           --master=https://192.168.33.220.xip.io:8443           --public-master=https://192.168.33.220.xip.io:8443           --cert-dir=/etc/origin/master --overwrite=false
+==> master:   * yum_package[origin-master] action install
+==> master: [2016-12-18T18:34:49+00:00] INFO: yum_package[origin-master] installing origin-master-1.3.1-1.el7 from centos-openshift-origin repository
+==> master: [2016-12-18T18:34:51+00:00] INFO: yum_package[origin-master] installed origin-master at 1.3.1-1.el7
+==> master: 
+==> master:     - install version 1.3.1-1.el7 of package origin-master
+==> master: [2016-12-18T18:34:51+00:00] INFO: yum_package[origin-master] sending reload action to service[daemon-reload] (immediate)
+==> master: Recipe: cookbook-openshift3::default
+==> master:   * service[daemon-reload] action reload
+==> master:  (up to date)
+==> master: Recipe: cookbook-openshift3::master_standalone
+==> master:   * template[/etc/systemd/system/origin-master.service] action create (skipped due to only_if)
+==> master:   * template[/etc/sysconfig/origin-master] action create
+==> master: [2016-12-18T18:34:51+00:00] INFO: template[/etc/sysconfig/origin-master] backed up to /var/chef/backup/etc/sysconfig/origin-master.chef-20161218183451.281337
+==> master: [2016-12-18T18:34:51+00:00] INFO: template[/etc/sysconfig/origin-master] updated file contents /etc/sysconfig/origin-master
+==> master: 
+==> master:     - update content in file /etc/sysconfig/origin-master from 76c162 to 55b4f9
+==> master:     --- /etc/sysconfig/origin-master	2016-10-19 16:15:58.000000000 +0000
+==> master:     +++ /etc/sysconfig/.chef-origin-master20161218-20638-1xfn8o6	2016-12-18 18:34:51.279038500 +0000
+==> master:     @@ -1,6 +1,5 @@
+==> master:     -OPTIONS="--loglevel=0"
+==> master:     +OPTIONS=--loglevel=2
+==> master:      CONFIG_FILE=/etc/origin/master/master-config.yaml
+==> master:     -
+==> master:      # Proxy configuration
+==> master:      # Origin uses standard HTTP_PROXY environment variables. Be sure to set
+==> master:      # NO_PROXY for your master
+==> master: 
+==> master:     - restore selinux security context
+==> master:   * execute[Create the policy file] action run
+==> master: [2016-12-18T18:34:51+00:00] INFO: execute[Create the policy file] ran successfully
+==> master: 
+==> master:     - execute /usr/bin/oadm create-bootstrap-policy-file --filename=/etc/origin/master/policy.json
+==> master:   * template[/etc/origin/master/scheduler.json] action create
+==> master: [2016-12-18T18:34:51+00:00] INFO: template[/etc/origin/master/scheduler.json] created file /etc/origin/master/scheduler.json
+==> master: 
+==> master:     - create new file /etc/origin/master/scheduler.json
+==> master: [2016-12-18T18:34:51+00:00] INFO: template[/etc/origin/master/scheduler.json] updated file contents /etc/origin/master/scheduler.json
+==> master: 
+==> master:     - update content in file /etc/origin/master/scheduler.json from none to a656dd
+==> master:     --- /etc/origin/master/scheduler.json	2016-12-18 18:34:51.484141000 +0000
+==> master:     +++ /etc/origin/master/.chef-scheduler20161218-20638-64kqqz.json	2016-12-18 18:34:51.484141000 +0000
+==> master:     @@ -1 +1,72 @@
+==> master:     +{
+==> master:     +    "apiVersion": "v1", 
+==> master:     +    "kind": "Policy", 
+==> master:     +    "predicates": [
+==> master:     +        {
+==> master:     +            "name": "NoDiskConflict"
+==> master:     +        }, 
+==> master:     +        {
+==> master:     +            "name": "NoVolumeZoneConflict"
+==> master:     +        }, 
+==> master:     +        {
+==> master:     +            "name": "MaxEBSVolumeCount"
+==> master:     +        }, 
+==> master:     +        {
+==> master:     +            "name": "MaxGCEPDVolumeCount"
+==> master:     +        }, 
+==> master:     +        {
+==> master:     +            "name": "GeneralPredicates"
+==> master:     +        }, 
+==> master:     +        {
+==> master:     +            "name": "PodToleratesNodeTaints"
+==> master:     +        }, 
+==> master:     +        {
+==> master:     +            "name": "CheckNodeMemoryPressure"
+==> master:     +        }, 
+==> master:     +        {
+==> master:     +            "name": "MatchInterPodAffinity"
+==> master:     +        }, 
+==> master:     +        {
+==> master:     +            "argument": {
+==> master:     +                "serviceAffinity": {
+==> master:     +                    "labels": [
+==> master:     +                        "region"
+==> master:     +                    ]
+==> master:     +                }
+==> master:     +            }, 
+==> master:     +            "name": "Region"
+==> master:     +        }
+==> master:     +    ], 
+==> master:     +    "priorities": [
+==> master:     +        {
+==> master:     +            "name": "LeastRequestedPriority", 
+==> master:     +            "weight": 1
+==> master:     +        }, 
+==> master:     +        {
+==> master:     +            "name": "BalancedResourceAllocation", 
+==> master:     +            "weight": 1
+==> master:     +        }, 
+==> master:     +        {
+==> master:     +            "name": "SelectorSpreadPriority", 
+==> master:     +            "weight": 1
+==> master:     +        }, 
+==> master:     +        {
+==> master:     +            "name": "NodeAffinityPriority", 
+==> master:     +            "weight": 1
+==> master:     +        }, 
+==> master:     +        {
+==> master:     +            "name": "TaintTolerationPriority", 
+==> master:     +            "weight": 1
+==> master:     +        }, 
+==> master:     +        {
+==> master:     +            "argument": {
+==> master:     +                "serviceAntiAffinity": {
+==> master:     +                    "label": "zone"
+==> master:     +                }
+==> master:     +            }, 
+==> master:     +            "name": "Zone", 
+==> master:     +            "weight": 2
+==> master:     +        }
+==> master:     +    ]
+==> master:     +}
+==> master: 
+==> master:     - restore selinux security context
+==> master: [2016-12-18T18:34:51+00:00] INFO: template[/etc/origin/master/scheduler.json] not queuing delayed action restart on service[origin-master] (delayed), as it's already been queued
+==> master:   * yum_package[httpd-tools] action install
+==> master:  (up to date)
+==> master:   * template[/etc/origin/openshift-passwd] action create
+==> master: [2016-12-18T18:34:51+00:00] INFO: template[/etc/origin/openshift-passwd] created file /etc/origin/openshift-passwd
+==> master: 
+==> master:     - create new file /etc/origin/openshift-passwd[2016-12-18T18:34:51+00:00] INFO: template[/etc/origin/openshift-passwd] updated file contents /etc/origin/openshift-passwd
+==> master: 
+==> master:     - update content in file /etc/origin/openshift-passwd from none to e3b0c4
+==> master:     (no diff)[2016-12-18T18:34:51+00:00] INFO: template[/etc/origin/openshift-passwd] mode changed to 600
+==> master: 
+==> master:     - change mode from '' to '0600'
+==> master: 
+==> master:     - restore selinux security context
+==> master:   * openshift_create_master[Create master configuration file] action create
+==> master: 
+==> master:     * service[origin-master] action nothing
+==> master:  (skipped due to action :nothing)
+==> master:     * service[origin-master-api] action nothing
+==> master:  (skipped due to action :nothing)
+==> master:     * service[origin-master-controllers] action nothing
+==> master:  (skipped due to action :nothing)
+==> master:     * template[/etc/origin/master/master-config.yaml] action create
+==> master: [2016-12-18T18:34:51+00:00] INFO: template[/etc/origin/master/master-config.yaml] created file /etc/origin/master/master-config.yaml
+==> master: 
+==> master:       - create new file /etc/origin/master/master-config.yaml[2016-12-18T18:34:51+00:00] INFO: template[/etc/origin/master/master-config.yaml] updated file contents /etc/origin/master/master-config.yaml
+==> master: 
+==> master:       - update content in file /etc/origin/master/master-config.yaml from none to 0ecf0b
+==> master:       --- /etc/origin/master/master-config.yaml	2016-12-18 18:34:51.744271000 +0000
+==> master:       +++ /etc/origin/master/.chef-master-config20161218-20638-13lnob.yaml	2016-12-18 18:34:51.744271000 +0000
+==> master:       @@ -1 +1,171 @@
+==> master:       +apiLevels:
+==> master:       +- v1
+==> master:       +apiVersion: v1
+==> master:       +assetConfig:
+==> master:       +  logoutURL: ""
+==> master:       +  masterPublicURL:  https://192.168.33.220.xip.io:8443
+==> master:       +  publicURL: https://192.168.33.220.xip.io:8443/console/
+==> master:       +  metricsPublicURL: https://hawkular-metrics.192.168.33.220.xip.io/hawkular/metrics
+==> master:       +  loggingPublicURL: https://kibana.cloudapps.192.168.33.220.xip.io
+==> master:       +  servingInfo:
+==> master:       +    bindAddress: 0.0.0.0:8443
+==> master:       +    certFile: master.server.crt
+==> master:       +    clientCA: ""
+==> master:       +    keyFile: master.server.key
+==> master:       +    maxRequestsInFlight: 0
+==> master:       +    requestTimeoutSeconds: 0
+==> master:       +auditConfig:
+==> master:       +  enabled: false
+==> master:       +controllers: '*'
+==> master:       +controllerConfig:
+==> master:       +  serviceServingCert:
+==> master:       +    signer:
+==> master:       +      certFile: service-signer.crt
+==> master:       +      keyFile: service-signer.key
+==> master:       +corsAllowedOrigins:
+==> master:       +  - 127.0.0.1
+==> master:       +  - localhost
+==> master:       +  - master
+==> master:       +  - 192.168.33.220.xip.io
+==> master:       +  - openshift
+==> master:       +  - openshift.default
+==> master:       +  - openshift.default.svc
+==> master:       +  - openshift.default.svc.cluster.local
+==> master:       +  - kubernetes
+==> master:       +  - kubernetes.default
+==> master:       +  - kubernetes.default.svc
+==> master:       +  - kubernetes.default.svc.cluster.local
+==> master:       +  - 172.30.0.1
+==> master:       +  - 10.0.2.15
+==> master:       +dnsConfig:
+==> master:       +  bindAddress: 0.0.0.0:53
+==> master:       +  bindNetwork: tcp4
+==> master:       +etcdClientInfo:
+==> master:       +  ca: ca.crt
+==> master:       +  certFile: master.etcd-client.crt
+==> master:       +  keyFile: master.etcd-client.key
+==> master:       +  urls:
+==> master:       +    - https://master:4001
+==> master:       +etcdConfig:
+==> master:       +  address: master:4001
+==> master:       +  peerAddress: master:7001
+==> master:       +  peerServingInfo:
+==> master:       +    bindAddress: 0.0.0.0:7001
+==> master:       +    certFile: etcd.server.crt
+==> master:       +    clientCA: ca.crt
+==> master:       +    keyFile: etcd.server.key
+==> master:       +  servingInfo:
+==> master:       +    bindAddress: 0.0.0.0:4001
+==> master:       +    certFile: etcd.server.crt
+==> master:       +    clientCA: ca.crt
+==> master:       +    keyFile: etcd.server.key
+==> master:       +  storageDirectory: /var/lib/origin/openshift.local.etcd
+==> master:       +etcdStorageConfig:
+==> master:       +  kubernetesStoragePrefix: kubernetes.io
+==> master:       +  kubernetesStorageVersion: v1
+==> master:       +  openShiftStoragePrefix: openshift.io
+==> master:       +  openShiftStorageVersion: v1
+==> master:       +imageConfig:
+==> master:       +  format: openshift/origin-${component}:${version}
+==> master:       +  latest: false
+==> master:       +imagePolicyConfig:
+==> master:       +  maxImagesBulkImportedPerRepository: 5
+==> master:       +kind: MasterConfig
+==> master:       +kubeletClientInfo:
+==> master:       +  ca: ca.crt
+==> master:       +  certFile: master.kubelet-client.crt
+==> master:       +  keyFile: master.kubelet-client.key
+==> master:       +  port: 10250
+==> master:       +kubernetesMasterConfig:
+==> master:       +  apiLevels:
+==> master:       +  - v1
+==> master:       +  apiServerArguments: null
+==> master:       +  controllerArguments: null
+==> master:       +  masterCount: 1
+==> master:       +  masterIP: 192.168.33.220
+==> master:       +  podEvictionTimeout: 
+==> master:       +  proxyClientInfo:
+==> master:       +    certFile: master.proxy-client.crt
+==> master:       +    keyFile: master.proxy-client.key
+==> master:       +  schedulerConfigFile: /etc/origin/master/scheduler.json
+==> master:       +  servicesNodePortRange: ""
+==> master:       +  servicesSubnet: 172.30.0.0/16
+==> master:       +  staticNodeNames: []
+==> master:       +masterClients:
+==> master:       +  externalKubernetesClientConnectionOverrides:
+==> master:       +    acceptContentTypes: application/vnd.kubernetes.protobuf,application/json
+==> master:       +    contentType: application/vnd.kubernetes.protobuf
+==> master:       +    burst: 400
+==> master:       +    qps: 200
+==> master:       +  externalKubernetesKubeConfig: ""
+==> master:       +  openshiftLoopbackClientConnectionOverrides:
+==> master:       +    acceptContentTypes: application/vnd.kubernetes.protobuf,application/json
+==> master:       +    contentType: application/vnd.kubernetes.protobuf
+==> master:       +    burst: 600
+==> master:       +    qps: 300
+==> master:       +  openshiftLoopbackKubeConfig: openshift-master.kubeconfig
+==> master:       +masterPublicURL: https://192.168.33.220.xip.io:8443
+==> master:       +networkConfig:
+==> master:       +  clusterNetworkCIDR: 10.128.0.0/14
+==> master:       +  serviceNetworkCIDR: 172.30.0.0/16
+==> master:       +  hostSubnetLength: 9
+==> master:       +  networkPluginName: redhat/openshift-ovs-subnet
+==> master:       +oauthConfig:
+==> master:       +  assetPublicURL: https://192.168.33.220.xip.io:8443/console/
+==> master:       +  grantConfig:
+==> master:       +    method: auto
+==> master:       +  identityProviders:
+==> master:       +  - name: htpasswd_auth
+==> master:       +    challenge: true
+==> master:       +    login: true
+==> master:       +    provider:
+==> master:       +      apiVersion: v1
+==> master:       +      kind: HTPasswdPasswordIdentityProvider
+==> master:       +      file: /etc/origin/openshift-passwd
+==> master:       +  masterPublicURL: https://192.168.33.220.xip.io:8443
+==> master:       +  masterURL: https://192.168.33.220.xip.io:8443
+==> master:       +  sessionConfig:
+==> master:       +    sessionMaxAgeSeconds: 3600
+==> master:       +    sessionName: ssn
+==> master:       +    sessionSecretsFile: /etc/origin/master/session-secrets.yaml
+==> master:       +  tokenConfig:
+==> master:       +    accessTokenMaxAgeSeconds: 86400
+==> master:       +    authorizeTokenMaxAgeSeconds: 500
+==> master:       +
+==> master:       +
+==> master:       +pauseControllers: false
+==> master:       +policyConfig:
+==> master:       +  bootstrapPolicyFile: /etc/origin/master/policy.json
+==> master:       +  openshiftInfrastructureNamespace: openshift-infra
+==> master:       +  openshiftSharedResourcesNamespace: openshift
+==> master:       +projectConfig:
+==> master:       +  defaultNodeSelector: "region=primary"
+==> master:       +  projectRequestMessage: 
+==> master:       +  projectRequestTemplate: 
+==> master:       +  securityAllocator:
+==> master:       +    mcsAllocatorRange: "s0:/2"
+==> master:       +    mcsLabelsPerProject: 5
+==> master:       +    uidAllocatorRange: 1000000000-1999999999/10000
+==> master:       +routingConfig:
+==> master:       +  subdomain: cloudapps.192.168.33.220.xip.io
+==> master:       +serviceAccountConfig:
+==> master:       +  limitSecretReferences: false
+==> master:       +  managedNames:
+==> master:       +  - default
+==> master:       +  - builder
+==> master:       +  - deployer
+==> master:       +  masterCA: ca.crt
+==> master:       +  privateKeyFile: serviceaccounts.private.key
+==> master:       +  publicKeyFiles:
+==> master:       +  - serviceaccounts.public.key
+==> master:       +servingInfo:
+==> master:       +  bindAddress: 0.0.0.0:8443
+==> master:       +  bindNetwork: tcp4
+==> master:       +  certFile: master.server.crt
+==> master:       +  clientCA: ca.crt
+==> master:       +  keyFile: master.server.key
+==> master:       +  maxRequestsInFlight: 500
+==> master:       +  requestTimeoutSeconds: 3600
+==> master:       +volumeConfig:
+==> master:       +  dynamicProvisioningEnabled: true
+==> master: 
+==> master:       - restore selinux security context
+==> master: [2016-12-18T18:34:51+00:00] INFO: template[/etc/origin/master/master-config.yaml] sending restart action to service[origin-master] (delayed)
+==> master:     * service[origin-master] action restart
+==> master: [2016-12-18T18:34:57+00:00] INFO: service[origin-master] restarted
+==> master: 
+==> master:       - restart service service[origin-master]
+==> master:   
+==> master:   * service[origin-master] action start
+==> master:  (up to date)
+==> master:   * service[origin-master] action enable
+==> master: [2016-12-18T18:34:57+00:00] INFO: service[origin-master] enabled
+==> master: 
+==> master:     - enable service service[origin-master]
+==> master: Recipe: cookbook-openshift3::master
+==> master:   * directory[/root/.kube] action create
+==> master: [2016-12-18T18:34:57+00:00] INFO: directory[/root/.kube] created directory /root/.kube
+==> master: 
+==> master:     - create new directory /root/.kube[2016-12-18T18:34:57+00:00] INFO: directory[/root/.kube] owner changed to 0
+==> master: [2016-12-18T18:34:57+00:00] INFO: directory[/root/.kube] group changed to 0
+==> master: [2016-12-18T18:34:57+00:00] INFO: directory[/root/.kube] mode changed to 700
+==> master: 
+==> master:     - change mode from '' to '0700'
+==> master:     - change owner from '' to 'root'
+==> master:     - change group from '' to 'root'
+==> master: 
+==> master:     - restore selinux security context
+==> master:   * execute[Copy the OpenShift admin client config] action run
+==> master: [2016-12-18T18:34:57+00:00] INFO: execute[Copy the OpenShift admin client config] ran successfully
+==> master: 
+==> master:     - execute cp /etc/origin/master/admin.kubeconfig /root/.kube/config && chmod 700 /root/.kube/config
+==> master: Recipe: cookbook-openshift3::nodes_certificates
+==> master:   * directory[/var/www/html/node] action create[2016-12-18T18:34:57+00:00] INFO: directory[/var/www/html/node] created directory /var/www/html/node
+==> master: 
+==> master:     - create new directory /var/www/html/node[2016-12-18T18:34:57+00:00] INFO: directory[/var/www/html/node] owner changed to 48
+==> master: [2016-12-18T18:34:57+00:00] INFO: directory[/var/www/html/node] group changed to 48
+==> master: [2016-12-18T18:34:57+00:00] INFO: directory[/var/www/html/node] mode changed to 755
+==> master: 
+==> master:     - change mode from '' to '0755'
+==> master:     - change owner from '' to 'apache'
+==> master:     - change group from '' to 'apache'
+==> master: 
+==> master:     - restore selinux security context
+==> master:   * directory[/var/www/html/node/generated-configs] action create[2016-12-18T18:34:58+00:00] INFO: directory[/var/www/html/node/generated-configs] created directory /var/www/html/node/generated-configs
+==> master: 
+==> master:     - create new directory /var/www/html/node/generated-configs[2016-12-18T18:34:58+00:00] INFO: directory[/var/www/html/node/generated-configs] owner changed to 48
+==> master: [2016-12-18T18:34:58+00:00] INFO: directory[/var/www/html/node/generated-configs] group changed to 48
+==> master: [2016-12-18T18:34:58+00:00] INFO: directory[/var/www/html/node/generated-configs] mode changed to 755
+==> master: 
+==> master:     - change mode from '' to '0755'
+==> master:     - change owner from '' to 'apache'
+==> master:     - change group from '' to 'apache'
+==> master: 
+==> master:     - restore selinux security context
+==> master:   * execute[Generate certificate directory for node-1] action run
+==> master: [2016-12-18T18:34:58+00:00] INFO: execute[Generate certificate directory for node-1] ran successfully
+==> master: 
+==> master:     - execute mkdir -p /tmp/vagrant-cache/chef/node-1
+==> master:   * execute[Generate certificate for node-1] action run
+==> master: [2016-12-18T18:34:58+00:00] INFO: execute[Generate certificate for node-1] ran successfully
+==> master: 
+==> master:     - execute /usr/bin/oadm create-api-client-config               --client-dir=/tmp/vagrant-cache/chef/node-1               --certificate-authority=/etc/origin/master/ca.crt               --signer-cert=/etc/origin/master/ca.crt --signer-key=/etc/origin/master/ca.key               --signer-serial=/etc/origin/master/ca.serial.txt --user='system:node:node-1'               --groups=system:nodes --master=https://192.168.33.220.xip.io:8443
+==> master:   * execute[Generate the node server certificate for node-1] action run
+==> master: [2016-12-18T18:34:58+00:00] INFO: execute[Generate the node server certificate for node-1] ran successfully
+==> master: 
+==> master:     - execute /usr/bin/oadm ca create-server-cert --cert=server.crt --key=server.key --overwrite=true               --hostnames=node-1,192.168.33.221 --signer-cert=/etc/origin/master/ca.crt --signer-key=/etc/origin/master/ca.key               --signer-serial=/etc/origin/master/ca.serial.txt && mv server.{key,crt} /tmp/vagrant-cache/chef/node-1
+==> master:   * execute[Generate a tarball for node-1] action run
+==> master: 
+==> master:     [execute] 
+==> master: ./
+==> master:               ./system:node:node-1.crt
+==> master:               ./system:node:node-1.key
+==> master:               ./ca.crt
+==> master:               ./system:node:node-1.kubeconfig
+==> master:               ./server.key
+==> master:               ./server.crt
+==> master: [2016-12-18T18:34:58+00:00] INFO: execute[Generate a tarball for node-1] ran successfully
+==> master:     - execute tar czvf /var/www/html/node/generated-configs/node-1.tgz                -C /tmp/vagrant-cache/chef/node-1 . --remove-files && chown apache: /var/www/html/node/generated-configs/node-1.tgz
+==> master:   * execute[Generate certificate directory for master] action run
+==> master: [2016-12-18T18:34:58+00:00] INFO: execute[Generate certificate directory for master] ran successfully
+==> master:     
+==> master: - execute mkdir -p /tmp/vagrant-cache/chef/master
+==> master:   * execute[Generate certificate for master] action run
+==> master: [2016-12-18T18:34:59+00:00] INFO: execute[Generate certificate for master] ran successfully
+==> master: 
+==> master:     - execute /usr/bin/oadm create-api-client-config               --client-dir=/tmp/vagrant-cache/chef/master               --certificate-authority=/etc/origin/master/ca.crt               --signer-cert=/etc/origin/master/ca.crt --signer-key=/etc/origin/master/ca.key               --signer-serial=/etc/origin/master/ca.serial.txt --user='system:node:master'               --groups=system:nodes --master=https://192.168.33.220.xip.io:8443
+==> master:   * execute[Generate the node server certificate for master] action run
+==> master: [2016-12-18T18:34:59+00:00] INFO: execute[Generate the node server certificate for master] ran successfully
+==> master: 
+==> master:     - execute /usr/bin/oadm ca create-server-cert --cert=server.crt --key=server.key --overwrite=true               --hostnames=master,192.168.33.220 --signer-cert=/etc/origin/master/ca.crt --signer-key=/etc/origin/master/ca.key               --signer-serial=/etc/origin/master/ca.serial.txt && mv server.{key,crt} /tmp/vagrant-cache/chef/master
+==> master:   * execute[Generate a tarball for master] action run
+==> master: 
+==> master:     [execute] ./
+==> master:               ./system:node:master.crt
+==> master:               ./system:node:master.key
+==> master:               
+==> master: ./ca.crt
+==> master:               ./system:node:master.kubeconfig
+==> master:               ./server.key
+==> master:               ./server.crt
+==> master: [2016-12-18T18:34:59+00:00] INFO: execute[Generate a tarball for master] ran successfully
+==> master:     - execute tar czvf /var/www/html/node/generated-configs/master.tgz                -C /tmp/vagrant-cache/chef/master . --remove-files && chown apache: /var/www/html/node/generated-configs/master.tgz
+==> master: 
+==> master: Recipe: cookbook-openshift3::node
+==> master:   * file[/usr/local/etc/.firewall_node_additional.txt] action create
+==> master: [2016-12-18T18:34:59+00:00] INFO: file[/usr/local/etc/.firewall_node_additional.txt] created file /usr/local/etc/.firewall_node_additional.txt
+==> master: 
+==> master:     - create new file /usr/local/etc/.firewall_node_additional.txt[2016-12-18T18:34:59+00:00] INFO: file[/usr/local/etc/.firewall_node_additional.txt] updated file contents /usr/local/etc/.firewall_node_additional.txt
+==> master: 
+==> master:     - update content in file /usr/local/etc/.firewall_node_additional.txt from none to e3b0c4
+==> master:     (no diff)
+==> master: [2016-12-18T18:34:59+00:00] INFO: file[/usr/local/etc/.firewall_node_additional.txt] owner changed to 0
+==> master: [2016-12-18T18:34:59+00:00] INFO: file[/usr/local/etc/.firewall_node_additional.txt] group changed to 0
+==> master: 
+==> master:     - change owner from '' to 'root'
+==> master:     - change group from '' to 'root'
+==> master: 
+==> master:     - restore selinux security context
+==> master:   * iptables_rule[firewall_node] action enable
+==> master: 
+==> master:     * template[/etc/iptables.d/firewall_node] action create
+==> master: [2016-12-18T18:34:59+00:00] INFO: template[/etc/iptables.d/firewall_node] created file /etc/iptables.d/firewall_node
+==> master: 
+==> master:       - create new file /etc/iptables.d/firewall_node[2016-12-18T18:34:59+00:00] INFO: template[/etc/iptables.d/firewall_node] updated file contents /etc/iptables.d/firewall_node
+==> master: 
+==> master:       - update content in file /etc/iptables.d/firewall_node from none to 27fd11
+==> master:       --- /etc/iptables.d/firewall_node	2016-12-18 18:34:59.878335999 +0000
+==> master:       +++ /etc/iptables.d/.chef-firewall_node20161218-20638-15r6kb3	2016-12-18 18:34:59.877335500 +0000
+==> master:       @@ -1 +1,6 @@
+==> master:       +-A INPUT -m state --state NEW -m comment --comment "OpenShift kubelet" -m tcp -p tcp --dport 10250 -j ACCEPT
+==> master:       +-A INPUT -m state --state NEW -m comment --comment "OpenShift kubelet ReadOnlyPort" -m tcp -p tcp --dport 10255 -j ACCEPT
+==> master:       +-A INPUT -m state --state NEW -m comment --comment "OpenShift kubelet ReadOnlyPort udp" -m udp -p udp --dport 10255 -j ACCEPT
+==> master:       +-A INPUT -m state --state NEW -m comment --comment "https" -m tcp -p tcp --dport 443 -j ACCEPT
+==> master:       +-A INPUT -m state --state NEW -m comment --comment "http" -m tcp -p tcp --dport 80 -j ACCEPT
+==> master: [2016-12-18T18:34:59+00:00] INFO: template[/etc/iptables.d/firewall_node] mode changed to 644
+==> master: 
+==> master:       - change mode from '' to '0644'
+==> master: 
+==> master:       - restore selinux security context
+==> master: [2016-12-18T18:34:59+00:00] INFO: template[/etc/iptables.d/firewall_node] not queuing delayed action run on execute[rebuild-iptables] (delayed), as it's already been queued
+==> master:   
+==> master:   * directory[/etc/origin/node] action create
+==> master: [2016-12-18T18:34:59+00:00] INFO: directory[/etc/origin/node] created directory /etc/origin/node
+==> master: 
+==> master:     - create new directory /etc/origin/node
+==> master: 
+==> master:     - restore selinux security context
+==> master:   * template[/etc/sysconfig/origin-node] action create
+==> master: [2016-12-18T18:34:59+00:00] INFO: template[/etc/sysconfig/origin-node] created file /etc/sysconfig/origin-node
+==> master: 
+==> master:     - create new file /etc/sysconfig/origin-node[2016-12-18T18:34:59+00:00] INFO: template[/etc/sysconfig/origin-node] updated file contents /etc/sysconfig/origin-node
+==> master: 
+==> master:     - update content in file /etc/sysconfig/origin-node from none to 406883
+==> master:     --- /etc/sysconfig/origin-node	2016-12-18 18:34:59.928360999 +0000
+==> master:     +++ /etc/sysconfig/.chef-origin-node20161218-20638-1oq2p4b	2016-12-18 18:34:59.928360999 +0000
+==> master:     @@ -1 +1,23 @@
+==> master:     +OPTIONS=--loglevel=2
+==> master:     +# /etc/origin/node/ should contain the entire contents of
+==> master:     +# /var/lib/origin.local.certificates/node-${node-fqdn} generated by
+==> master:     +# running 'atomic-enterprise admin create-node-config' on your master
+==> master:     +#
+==> master:     +# If if your node is running on a separate host you can rsync the contents
+==> master:     +# rsync -a root@atomic-enterprise-master:/var/lib/origin/origin.local.certificates/node-`hostname`/ /etc/origin/node
+==> master:     +CONFIG_FILE=/etc/origin/node/node-config.yaml
+==> master:     +
+==> master:     +# The $DOCKER_NETWORK_OPTIONS variable is used by sdn plugins to set
+==> master:     +# $DOCKER_NETWORK_OPTIONS variable in the /etc/sysconfig/docker-network
+==> master:     +# Most plugins include their own defaults within the scripts
+==> master:     +# TODO: More elegant solution like this
+==> master:     +# https://github.com/coreos/flannel/blob/master/dist/mk-docker-opts.sh
+==> master:     +# DOCKER_NETWORK_OPTIONS='-b=lbr0 --mtu=1450'
+==> master:     +
+==> master:     +# Proxy configuration
+==> master:     +# Origin uses standard HTTP_PROXY environment variables. Be sure to set
+==> master:     +# NO_PROXY for your master
+==> master:     +#NO_PROXY=master.example.com
+==> master:     +#HTTP_PROXY=http://USER:PASSWORD@IPADDR:PORT
+==> master:     +#HTTPS_PROXY=https://USER:PASSWORD@IPADDR:PORT
+==> master: 
+==> master:     - restore selinux security context
+==> master:   * yum_package[origin-node] action install
+==> master: [2016-12-18T18:34:59+00:00] INFO: yum_package[origin-node] installing origin-node-1.3.1-1.el7 from centos-openshift-origin repository
+==> master: [2016-12-18T18:35:02+00:00] INFO: yum_package[origin-node] installed origin-node at 1.3.1-1.el7
+==> master: 
+==> master:     - install version 1.3.1-1.el7 of package origin-node
+==> master:   * yum_package[origin-sdn-ovs] action install
+==> master: [2016-12-18T18:35:03+00:00] INFO: yum_package[origin-sdn-ovs] installing origin-sdn-ovs-1.3.1-1.el7 from centos-openshift-origin repository
+==> master: [2016-12-18T18:35:06+00:00] INFO: yum_package[origin-sdn-ovs] installed origin-sdn-ovs at 1.3.1-1.el7
+==> master: 
+==> master:     - install version 1.3.1-1.el7 of package origin-sdn-ovs
+==> master:   * remote_file[Retrieve certificate from Master[master]] action create_if_missing
+==> master: [2016-12-18T18:35:06+00:00] INFO: remote_file[Retrieve certificate from Master[master]] created file /etc/origin/node/master.tgz
+==> master: 
+==> master:     - create new file /etc/origin/node/master.tgz
+==> master: [2016-12-18T18:35:06+00:00] INFO: remote_file[Retrieve certificate from Master[master]] updated file contents /etc/origin/node/master.tgz
+==> master: 
+==> master:     - update content in file /etc/origin/node/master.tgz from none to aa2e7e
+==> master: 
+==> master:     
+==> master: (new content is binary, diff output suppressed)
+==> master: 
+==> master:     
+==> master: - restore selinux security context
+==> master: 
+==> master: [2016-12-18T18:35:07+00:00] INFO: remote_file[Retrieve certificate from Master[master]] sending run action to execute[Extract certificate to Node folder] (immediate)
+==> master:   * execute[Extract certificate to Node folder] action run
+==> master: [2016-12-18T18:35:07+00:00] INFO: execute[Extract certificate to Node folder] ran successfully
+==> master: 
+==> master:     - execute tar xzf master.tgz
+==> master:   * execute[Extract certificate to Node folder] action nothing (skipped due to action :nothing)
+==> master:   * template[/etc/origin/node/node-config.yaml] action create
+==> master: [2016-12-18T18:35:07+00:00] INFO: template[/etc/origin/node/node-config.yaml] created file /etc/origin/node/node-config.yaml
+==> master: 
+==> master:     - create new file /etc/origin/node/node-config.yaml
+==> master: [2016-12-18T18:35:07+00:00] INFO: template[/etc/origin/node/node-config.yaml] updated file contents /etc/origin/node/node-config.yaml
+==> master: 
+==> master:     - update content in file /etc/origin/node/node-config.yaml from none to 737fb8
+==> master:     --- /etc/origin/node/node-config.yaml	2016-12-18 18:35:07.030910500 +0000
+==> master:     +++ /etc/origin/node/.chef-node-config20161218-20638-15byb0m.yaml	2016-12-18 18:35:07.030910500 +0000
+==> master:     @@ -1 +1,49 @@
+==> master:     +allowDisabledDocker: false
+==> master:     +apiVersion: v1
+==> master:     +dnsDomain: cluster.local
+==> master:     +dockerConfig:
+==> master:     +  execHandlerName: ""
+==> master:     +iptablesSyncPeriod: "5s"
+==> master:     +imageConfig:
+==> master:     +  format: openshift/origin-${component}:${version}
+==> master:     +  latest: false
+==> master:     +masterClientConnectionOverrides:
+==> master:     +  acceptContentTypes: application/vnd.kubernetes.protobuf,application/json
+==> master:     +  contentType: application/vnd.kubernetes.protobuf
+==> master:     +  burst: 200
+==> master:     +  qps: 100
+==> master:     +kind: NodeConfig
+==> master:     +masterKubeConfig: system:node:master.kubeconfig
+==> master:     +networkPluginName: redhat/openshift-ovs-subnet
+==> master:     +# networkConfig struct introduced in origin 1.0.6 and OSE 3.0.2 which
+==> master:     +# deprecates networkPluginName above. The two should match.
+==> master:     +networkConfig:
+==> master:     +   mtu: 1450
+==> master:     +   networkPluginName: redhat/openshift-ovs-subnet
+==> master:     +nodeIP: 192.168.33.220
+==> master:     +nodeName: master
+==> master:     +podManifestConfig:
+==> master:     +servingInfo:
+==> master:     +  bindAddress: 0.0.0.0:10250
+==> master:     +  certFile: server.crt
+==> master:     +  clientCA: ca.crt
+==> master:     +  keyFile: server.key
+==> master:     +volumeDirectory: /var/lib/origin/openshift.local.volumes
+==> master:     +kubeletArguments:
+==> master:     +  max-pods:
+==> master:     +    - "40"
+==> master:     +  minimum-container-ttl-duration:
+==> master:     +    - "10s"
+==> master:     +  maximum-dead-containers-per-container:
+==> master:     +    - "2"
+==> master:     +  maximum-dead-containers:
+==> master:     +    - "100"
+==> master:     +  image-gc-high-threshold:
+==> master:     +    - "90"
+==> master:     +  image-gc-low-threshold:
+==> master:     +    - "80"
+==> master:     +proxyArguments:
+==> master:     +  proxy-mode:
+==> master:     +    - iptables
+==> master:     +
+==> master: 
+==> master:     - restore selinux security context
+==> master: [2016-12-18T18:35:07+00:00] INFO: template[/etc/origin/node/node-config.yaml] sending restart action to service[origin-node] (immediate)
+==> master:   * service[origin-node] action restart
+==> master: [2016-12-18T18:35:07+00:00] INFO: Retrying execution of service[origin-node], 4 attempt(s) left
+==> master: [2016-12-18T18:35:09+00:00] INFO: Retrying execution of service[origin-node], 3 attempt(s) left
+==> master: [2016-12-18T18:35:12+00:00] INFO: Retrying execution of service[origin-node], 2 attempt(s) left
+==> master: [2016-12-18T18:35:14+00:00] INFO: Retrying execution of service[origin-node], 1 attempt(s) left
+==> master: [2016-12-18T18:35:16+00:00] INFO: Retrying execution of service[origin-node], 0 attempt(s) left
+==> master: 
+==> master:     
+==> master:     ================================================================================
+==> master:     Error executing action `restart` on resource 'service[origin-node]'
+==> master:     ================================================================================
+==> master:     
+==> master:     Mixlib::ShellOut::ShellCommandFailed
+==> master:     ------------------------------------
+==> master:     Expected process to exit with [0], but received '1'
+==> master:     ---- Begin output of /bin/systemctl --system restart origin-node ----
+==> master:     STDOUT: 
+==> master:     STDERR: Warning: origin-node.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+==> master:     Job for origin-node.service failed because the control process exited with error code. See "systemctl status origin-node.service" and "journalctl -xe" for details.
+==> master:     ---- End output of /bin/systemctl --system restart origin-node ----
+==> master:     Ran /bin/systemctl --system restart origin-node returned 1
+==> master:     
+==> master:     Resource Declaration:
+==> master:     ---------------------
+==> master:     # In /tmp/vagrant-cache/chef/cookbooks/cookbook-openshift3/recipes/node.rb
+==> master:     
+==> master:     119:   service "#{node['cookbook-openshift3']['openshift_service_type']}-node" do
+==> master:     120:     retries 5
+==> master:     121:     retry_delay 2
+==> master:     122:     action :start
+==> master:     123:   end
+==> master:     124: end
+==> master:     
+==> master:     Compiled Resource:
+==> master:     ------------------
+==> master:     # Declared in /tmp/vagrant-cache/chef/cookbooks/cookbook-openshift3/recipes/node.rb:119:in `from_file'
+==> master:     
+==> master:     service("origin-node") do
+==> master:       action [:start]
+==> master:       supports {:restart=>nil, :reload=>nil, :status=>nil}
+==> master:       retries 5
+==> master:       retry_delay 2
+==> master:       default_guard_interpreter :default
+==> master:       service_name "origin-node"
+==> master:       pattern "origin-node"
+==> master:       declared_type :service
+==> master:       cookbook_name "cookbook-openshift3"
+==> master:       recipe_name "node"
+==> master:     end
+==> master:     
+==> master:     Platform:
+==> master:     ---------
+==> master:     x86_64-linux
+==> master:     
+==> master: [2016-12-18T18:35:18+00:00] INFO: Running queued delayed notifications before re-raising exception
+==> master: [2016-12-18T18:35:18+00:00] INFO: template[/etc/iptables.d/firewall_master] sending run action to execute[rebuild-iptables] (delayed)
+==> master: Recipe: iptables::default
+==> master:   * execute[rebuild-iptables] action run
+==> master: [2016-12-18T18:35:19+00:00] INFO: execute[rebuild-iptables] ran successfully
+==> master: 
+==> master:     - execute /usr/sbin/rebuild-iptables
+==> master: [2016-12-18T18:35:19+00:00] INFO: execute[Create the policy file] sending restart action to service[origin-master] (delayed)
+==> master: Recipe: cookbook-openshift3::master_standalone
+==> master:   * service[origin-master] action restart
+==> master: [2016-12-18T18:35:24+00:00] INFO: service[origin-master] restarted
+==> master: 
+==> master:     - restart service service[origin-master]
+==> master: [2016-12-18T18:35:24+00:00] INFO: template[/etc/sysconfig/origin-node] sending restart action to service[origin-node] (delayed)
+==> master: Recipe: cookbook-openshift3::node
+==> master:   * service[origin-node] action restart
+==> master: [2016-12-18T18:35:24+00:00] INFO: Retrying execution of service[origin-node], 4 attempt(s) left
+==> master: [2016-12-18T18:35:26+00:00] INFO: Retrying execution of service[origin-node], 3 attempt(s) left
+==> master: [2016-12-18T18:35:29+00:00] INFO: Retrying execution of service[origin-node], 2 attempt(s) left
+==> master: [2016-12-18T18:35:31+00:00] INFO: Retrying execution of service[origin-node], 1 attempt(s) left
+==> master: [2016-12-18T18:35:33+00:00] INFO: Retrying execution of service[origin-node], 0 attempt(s) left
+==> master: 
+==> master:     
+==> master:     ================================================================================
+==> master:     Error executing action `restart` on resource 'service[origin-node]'
+==> master:     ================================================================================
+==> master:     
+==> master:     Mixlib::ShellOut::ShellCommandFailed
+==> master:     ------------------------------------
+==> master:     Expected process to exit with [0], but received '1'
+==> master:     ---- Begin output of /bin/systemctl --system restart origin-node ----
+==> master:     STDOUT: 
+==> master:     STDERR: Warning: origin-node.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+==> master:     Job for origin-node.service failed because the control process exited with error code. See "systemctl status origin-node.service" and "journalctl -xe" for details.
+==> master:     ---- End output of /bin/systemctl --system restart origin-node ----
+==> master:     Ran /bin/systemctl --system restart origin-node returned 1
+==> master:     
+==> master:     Resource Declaration:
+==> master:     ---------------------
+==> master:     # In /tmp/vagrant-cache/chef/cookbooks/cookbook-openshift3/recipes/node.rb
+==> master:     
+==> master:     119:   service "#{node['cookbook-openshift3']['openshift_service_type']}-node" do
+==> master:     120:     retries 5
+==> master:     121:     retry_delay 2
+==> master:     122:     action :start
+==> master:     123:   end
+==> master:     124: end
+==> master:     
+==> master:     Compiled Resource:
+==> master:     ------------------
+==> master:     # Declared in /tmp/vagrant-cache/chef/cookbooks/cookbook-openshift3/recipes/node.rb:119:in `from_file'
+==> master:     
+==> master:     service("origin-node") do
+==> master:       action [:start]
+==> master:       supports {:restart=>nil, :reload=>nil, :status=>nil}
+==> master:       retries 5
+==> master:       retry_delay 2
+==> master:       default_guard_interpreter :default
+==> master:       service_name "origin-node"
+==> master:       pattern "origin-node"
+==> master:       declared_type :service
+==> master:       cookbook_name "cookbook-openshift3"
+==> master:       recipe_name "node"
+==> master:     end
+==> master:     
+==> master:     Platform:
+==> master:     ---------
+==> master:     x86_64-linux
+==> master:     
+==> master: 
+==> master: Running handlers:
+==> master: [2016-12-18T18:35:36+00:00] ERROR: Running exception handlers
+==> master: Running handlers complete
+==> master: [2016-12-18T18:35:36+00:00] ERROR: Exception handlers complete
+==> master: Chef Client failed. 69 resources updated in 01 minutes 59 seconds
+==> master: [2016-12-18T18:35:36+00:00] FATAL: Stacktrace dumped to /tmp/vagrant-cache/chef/chef-stacktrace.out
+==> master: [2016-12-18T18:35:36+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+==> master: [2016-12-18T18:35:36+00:00] ERROR: Chef::Exceptions::MultipleFailures
+==> master: [2016-12-18T18:35:36+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+Chef never successfully completed! Any errors should be visible in the
+output above. Please fix your recipes so that they properly complete.
