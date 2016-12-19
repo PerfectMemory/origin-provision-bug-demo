@@ -1,9 +1,9 @@
 DEPENDENCIES
-  cookbook-openshift3 (~> 1.10.21)
+  cookbook-openshift3 (~> 1.10.22)
 
 GRAPH
   compat_resource (12.16.2)
-  cookbook-openshift3 (1.10.21)
+  cookbook-openshift3 (1.10.22)
     iptables (>= 1.0.0)
     selinux_policy (>= 0.0.0)
   iptables (3.0.1)
