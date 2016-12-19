@@ -7,10 +7,10 @@ Dotenv.load!('.env') if defined?(Dotenv)
 # DRY this into constants because we need these in multiple places.
 INTERNAL_NETWORK = '192.168.33.0/24'.freeze # all nodes should be included in this network!
 MASTER_NODES = [
-  { 'ipaddress' => '192.168.33.220', 'fqdn' => 'master', 'region' => 'infra' }
+  { 'ipaddress' => '192.168.33.220', 'fqdn' => 'master', 'labels' => 'region=infra' }
 ].freeze
 MINION_NODES = (1..Integer(ENV.fetch('MINIONS', 1))).map do |i|
-  { 'ipaddress' => format('192.168.33.%d', 220 + i), 'fqdn' => format('node-%d', i), 'region' => 'primary' }
+  { 'ipaddress' => format('192.168.33.%d', 220 + i), 'fqdn' => format('node-%d', i), 'labels' => 'region=primary' }
 end.freeze
 
 ENV['VAGRANT_DEFAULT_PROVIDER'] = 'virtualbox'
@@ -76,7 +76,7 @@ Vagrant.configure(2) do |config|
           'openshift_common_default_nodeSelector' => "region=#{MINION_NODES.empty? ? 'infra' : 'primary'}",
           'openshift_common_ip' => spec['ipaddress']
         }
-        chef.add_role 'openshift3-master'
+        chef.add_role 'openshift3-base'
       end
     end
   end
@@ -100,7 +100,7 @@ Vagrant.configure(2) do |config|
           'node_servers' => MINION_NODES + MASTER_NODES, # master runs 'region=infra' node
           'openshift_common_ip' => spec['ipaddress']
         }
-        chef.add_role 'openshift3-node'
+        chef.add_role 'openshift3-base'
       end
     end
   end
