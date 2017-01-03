@@ -1,3 +1,3 @@
 source 'https://api.berkshelf.com'
 
-cookbook 'cookbook-openshift3', '~> 1.10.22'
+cookbook 'cookbook-openshift3', '~> 1.10.26'
