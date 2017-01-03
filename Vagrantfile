@@ -6,11 +6,19 @@ Dotenv.load!('.env') if defined?(Dotenv)
 
 # DRY this into constants because we need these in multiple places.
 INTERNAL_NETWORK = '192.168.33.0/24'.freeze # all nodes should be included in this network!
-MASTER_NODES = [
-  { 'ipaddress' => '192.168.33.220', 'fqdn' => 'master', 'labels' => 'region=infra' }
-].freeze
+MASTER_NODES = (1..Integer(ENV.fetch('MASTERS', 1))).map do |i|
+  { 'ipaddress' => format('192.168.33.%d', 219 + i), 'fqdn' => format('master-%d', i).sub(/-1$/, ''),
+    'labels' => 'region=infra', 'schedulable' => true }
+end.freeze
 MINION_NODES = (1..Integer(ENV.fetch('MINIONS', 1))).map do |i|
-  { 'ipaddress' => format('192.168.33.%d', 220 + i), 'fqdn' => format('node-%d', i), 'labels' => 'region=primary' }
+  { 'ipaddress' => format('192.168.33.%d', 229 + i), 'fqdn' => format('node-%d', i),
+    'labels' => 'region=primary', 'schedulable' => true }
+end.freeze
+# We limit to a single etcd node on 'master' node because defining more etcd_nodes
+# means waiting for all of them (in ETCD_INITIAL_CLUSTER) to be available before
+# we can provision openshift. Too much for a toy cluster but fine in production!
+ETCD_NODES = MASTER_NODES.select do |master_node|
+  master_node['fqdn'] == 'master'
 end.freeze
 
 ENV['VAGRANT_DEFAULT_PROVIDER'] = 'virtualbox'
@@ -68,6 +76,7 @@ Vagrant.configure(2) do |config|
         ChefNodeHelper.setup_chef_environment!(chef)
         chef.json['cookbook-openshift3'] = {
           'master_servers' => MASTER_NODES,
+          'etcd_servers' => ETCD_NODES,
           'node_servers' => MINION_NODES + MASTER_NODES, # master runs 'region=infra' node
           'openshift_common_public_hostname' => "#{spec['ipaddress']}.xip.io",
           'openshift_master_router_subdomain' => "cloudapps.#{spec['ipaddress']}.xip.io",

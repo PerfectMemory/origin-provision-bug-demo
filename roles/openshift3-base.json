@@ -7,10 +7,15 @@
     "cookbook-openshift3": {
       "openshift_deployment_type": "origin",
       "ose_major_version": "1.3",
+      "openshift_HA": true,
+      "openshift_cluster_name": "dev",
       "openshift_common_portal_net": "172.30.0.0/16",
       "openshift_master_sdn_cluster_network_cidr": "10.128.0.0/14",
       "openshift_master_sdn_host_subnet_length": 9,
-      "deploy_example": false
+      "openshift_hosted_manage_router": false,
+      "openshift_hosted_manage_registry": false,
+      "deploy_example": false,
+      "docker_log_driver": "journald"
     }
   },
   "chef_type": "role",
