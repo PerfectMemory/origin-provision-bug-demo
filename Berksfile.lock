@@ -1,12 +1,15 @@
 DEPENDENCIES
-  cookbook-openshift3 (~> 1.10.26)
+  cookbook-openshift3
+    git: https://github.com/PerfectMemory/cookbook-openshift3.git
+    revision: 4cb185bf48c4cc0dfa58326a17950b526298c2a9
+    branch:  origin-1.4-support
 
 GRAPH
   compat_resource (12.16.3)
-  cookbook-openshift3 (1.10.26)
+  cookbook-openshift3 (1.10.30)
     iptables (>= 1.0.0)
     selinux_policy (>= 0.0.0)
-  iptables (3.0.1)
+  iptables (3.1.0)
     compat_resource (>= 12.14.3)
   selinux_policy (1.1.1)
     yum (~> 4.0)

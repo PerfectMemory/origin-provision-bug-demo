@@ -6,14 +6,14 @@
   "override_attributes": {
     "cookbook-openshift3": {
       "openshift_deployment_type": "origin",
-      "ose_major_version": "1.3",
-      "openshift_HA": true,
-      "openshift_cluster_name": "dev",
+      "ose_major_version": "1.4",
+      "docker_version": "1.10.3-59.el7.centos",
       "openshift_common_portal_net": "172.30.0.0/16",
       "openshift_master_sdn_cluster_network_cidr": "10.128.0.0/14",
       "openshift_master_sdn_host_subnet_length": 9,
-      "openshift_hosted_manage_router": false,
-      "openshift_hosted_manage_registry": false,
+      "openshift_hosted_manage_router": true,
+      "openshift_hosted_manage_registry": true,
+      "openshift_hosted_cluster_metrics": false,
       "deploy_example": false,
       "docker_log_driver": "journald"
     }
